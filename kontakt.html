@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Kontakt zu Tabarek Khazraj — Anfrage für eine Apothekenvertretung senden."
+    />
+    <title>Kontakt — Tabarek Khazraj</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="top-nav">
+      <div class="container top-nav__inner">
+        <a class="top-nav__brand" href="index.html">Tabarek Khazraj</a>
+        <nav class="top-nav__links" aria-label="Hauptnavigation">
+          <a href="index.html">Home</a>
+          <a href="leistungen.html">Leistungen</a>
+          <a href="kontakt.html" aria-current="page">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="container page-header">
+        <h1>Kontakt</h1>
+        <p class="intro-text">
+          Senden Sie eine kurze Anfrage mit Zeitraum, Ort und gewünschtem
+          Umfang. Ich melde mich schnellstmöglich zurück.
+        </p>
+      </section>
+
+      <section class="container section" id="kontakt">
+        <div class="contact-layout">
+          <div class="contact-info">
+            <div class="info-card">
+              <h3>E-Mail</h3>
+              <p><a href="mailto:tabarek@example.com">tabarek@example.com</a></p>
+            </div>
+            <div class="info-card">
+              <h3>Angaben für die Anfrage</h3>
+              <p>
+                Bitte nennen Sie Zeitraum, Standort, Dienstzeiten und besondere
+                Anforderungen.
+              </p>
+            </div>
+          </div>
+
+          <form class="contact-form" action="thankyou.html" method="get">
+            <div class="form-row-split">
+              <div class="form-row">
+                <label for="name">Name</label>
+                <input id="name" name="name" autocomplete="name" required />
+              </div>
+              <div class="form-row">
+                <label for="apotheke">Apotheke</label>
+                <input id="apotheke" name="apotheke" autocomplete="organization" />
+              </div>
+            </div>
+            <div class="form-row-split">
+              <div class="form-row">
+                <label for="email">E-Mail</label>
+                <input id="email" type="email" name="email" autocomplete="email" required />
+              </div>
+              <div class="form-row">
+                <label for="telefon">Telefon</label>
+                <input id="telefon" name="telefon" autocomplete="tel" />
+              </div>
+            </div>
+            <fieldset class="form-fieldset">
+              <legend>Art der Vertretung</legend>
+              <label class="radio-label">
+                <input type="radio" name="vertretung" value="tag" checked />
+                Tagesvertretung
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="vertretung" value="notdienst" />
+                Notdienst
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="vertretung" value="mehrtaegig" />
+                Mehrjähriger Einsatz
+              </label>
+            </fieldset>
+            <div class="form-row">
+              <label for="nachricht">Nachricht</label>
+              <textarea id="nachricht" name="nachricht" required></textarea>
+            </div>
+            <p class="form-note">
+              Dieses statische Formular leitet aktuell auf die Danke-Seite weiter.
+            </p>
+            <button class="button" type="submit">Anfrage absenden</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>&copy; 2026 Tabarek Khazraj. Vertretungsapotheker.</p>
+      </div>
+    </footer>
+  </body>
+</html>
