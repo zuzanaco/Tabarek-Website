@@ -165,7 +165,7 @@ a:hover {
 }
 
 .hero-portrait .image-slot--hero {
-  width: 320px;
+  width: 440px;
   aspect-ratio: 1 / 1;
   border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
   background: linear-gradient(135deg, #e9e3ff 0%, #f5e9ff 100%);
@@ -878,7 +878,7 @@ body::after {
     grid-template-columns: 1fr;
   }
   .hero-portrait .image-slot--hero {
-    width: 240px;
+    width: 320px;
   }
   .contact-layout {
     grid-template-columns: 1fr;
