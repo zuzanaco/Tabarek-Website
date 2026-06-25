@@ -118,7 +118,7 @@ a:hover {
 
 .hero-body {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  grid-template-columns: 0.8fr 1.2fr;
   align-items: center;
   gap: 3rem;
 }
@@ -164,7 +164,7 @@ a:hover {
   top: auto;
   bottom: auto;
   left: auto;
-  width: 1200px;
+  width: 1400px;
   height: auto;
   min-height: 0;
   aspect-ratio: 1 / 1;
@@ -843,7 +843,7 @@ textarea {
   }
   .image-slot--hero {
     grid-column: 1;
-    width: 800px;
+    width: 1000px;
   }
   .contact-layout {
     grid-template-columns: 1fr;
