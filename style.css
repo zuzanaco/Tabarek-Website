@@ -544,3 +544,39 @@ textarea {
     text-align: center;
   }
 }
+
+.lang-switch {
+  display: inline-flex;
+  background: #f8f4ed;
+  border: 1px solid #efe8df;
+  border-radius: 999px;
+  padding: 3px;
+  gap: 2px;
+}
+
+.lang-switch button {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #3f4b42;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.lang-switch button:hover {
+  color: #b96f2a;
+}
+
+.lang-switch button[aria-pressed="true"] {
+  background: #184e47;
+  color: #f7f1e9;
+}
+
+.lang-switch button[aria-pressed="true"]:hover {
+  color: #f7f1e9;
+}

@@ -1,6 +1,6 @@
-# Vertretungsapotheker — Tabarek Khazraj
+# Vertretungs-Apothekerin — Tabarek Khazraj
 
-Diese statische Website präsentiert die Leistungen von Tabarek Khazraj (Vertretungsapotheker). Sie besteht aus mehreren Seiten: `index.html` (Home), `leistungen.html`, `kontakt.html` sowie `thankyou.html`.
+Diese statische Website präsentiert die Leistungen von Tabarek Khazraj (Vertretungs-Apothekerin). Sie besteht aus mehreren Seiten: `index.html` (Home), `leistungen.html`, `kontakt.html` sowie `thankyou.html`.
 
 Lokales Arbeiten
 
