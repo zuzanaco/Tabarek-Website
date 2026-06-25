@@ -133,7 +133,7 @@ a:hover {
   color: #8b7ad6;
   margin-bottom: 1rem;
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 1.15rem;
 }
 
 .hero h1 {
@@ -164,7 +164,7 @@ a:hover {
   top: auto;
   bottom: auto;
   left: auto;
-  width: 440px;
+  width: 520px;
   height: auto;
   min-height: 0;
   aspect-ratio: 1 / 1;
@@ -838,15 +838,12 @@ textarea {
 /* ---------- Responsive ---------- */
 
 @media (max-width: 900px) {
-  .hero {
+  .hero-body {
     grid-template-columns: 1fr;
   }
   .image-slot--hero {
     grid-column: 1;
-    width: 320px;
-  }
-  .hero-content {
-    grid-column: 1;
+    width: 360px;
   }
   .contact-layout {
     grid-template-columns: 1fr;
