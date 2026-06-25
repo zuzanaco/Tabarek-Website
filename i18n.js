@@ -148,6 +148,17 @@
       },
       footer: {
         copy: "© 2026 Tabarek Khazraj. Vertretungs-Apothekerin."
+      },
+      counters: {
+        label: "Kennzahlen",
+        experienceValue: "10+",
+        experienceLabel: "Jahre Berufserfahrung",
+        pharmaciesValue: "20+",
+        pharmaciesLabel: "Apotheken vertreten",
+        emergencyValue: "100+",
+        emergencyLabel: "Notdienste",
+        languagesValue: "7",
+        languagesLabel: "Sprachen"
       }
     },
     en: {
@@ -294,6 +305,17 @@
       },
       footer: {
         copy: "© 2026 Tabarek Khazraj. Locum Pharmacist."
+      },
+      counters: {
+        label: "Key figures",
+        experienceValue: "10+",
+        experienceLabel: "Years of experience",
+        pharmaciesValue: "20+",
+        pharmaciesLabel: "Pharmacies covered",
+        emergencyValue: "100+",
+        emergencyLabel: "Emergency services",
+        languagesValue: "7",
+        languagesLabel: "Languages"
       }
     }
   };

@@ -306,6 +306,12 @@ textarea {
   background: #e8e0d8;
 }
 
+/* Counters section is V2-only; hide it in V1 so the markup
+   can stay shared. */
+.counters {
+  display: none;
+}
+
 .footer-content {
   display: flex;
   justify-content: center;

@@ -698,6 +698,79 @@ body::after {
   pointer-events: none;
 }
 
+/* ---------- Counters (V2 only, sits under the hero) ---------- */
+
+.counters {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.6rem;
+  padding: 1.75rem 1.25rem;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(139, 122, 214, 0.12);
+  border-radius: 20px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.counter:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(26, 26, 46, 0.06);
+}
+
+.counter__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #f0e9ff;
+  color: #8b7ad6;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter__icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.counter__value {
+  font-size: clamp(1.8rem, 2.6vw, 2.4rem);
+  font-weight: 800;
+  color: #1a1a2e;
+  letter-spacing: -0.01em;
+  line-height: 1;
+  margin-top: 0.25rem;
+}
+
+.counter__label {
+  font-size: 0.88rem;
+  color: #6b6b80;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .counters {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .counters {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ---------- Image slots ---------- */
 
 .image-slot {
