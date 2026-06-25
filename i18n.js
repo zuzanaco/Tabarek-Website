@@ -73,7 +73,8 @@
         whyP2: "Platzhalter — Stärken in der Beratung: wie ich mit anspruchsvollen Situationen umgehe, Konflikte entschärfe und mit Empathie auf Kund*innen eingehe.",
         whyP3: "Platzhalter — schnelle Auffassungsgabe: wie ich mich rasch in neue Warenwirtschaftssysteme und Teams einarbeite.",
         whyCta: "Anfrage senden",
-        portraitAlt: "Porträt von Tabarek Khazraj"
+        portraitAlt: "Porträt von Tabarek Khazraj",
+        workstationAlt: "Tabarek Khazraj an der HV-Tisch-Kasse"
       },
       reviews: {
         title: "Bewertungen",
@@ -219,7 +220,8 @@
         whyP2: "Placeholder — strength in patient advice: how I handle demanding situations, de-escalate, and meet customers with empathy and experience.",
         whyP3: "Placeholder — quick learner: how I get up to speed with new ERP systems and teams fast.",
         whyCta: "Send inquiry",
-        portraitAlt: "Portrait of Tabarek Khazraj"
+        portraitAlt: "Portrait of Tabarek Khazraj",
+        workstationAlt: "Tabarek Khazraj at the till"
       },
       reviews: {
         title: "Reviews",
