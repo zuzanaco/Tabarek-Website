@@ -34,6 +34,9 @@ a:hover {
   background: linear-gradient(135deg, #184e47 0%, #2b6e5d 100%);
   color: white;
   padding: 5rem 0 4rem;
+  position: relative;
+  overflow: hidden;
+  min-height: 640px;
 }
 
 .hero-grid {
@@ -55,6 +58,18 @@ a:hover {
   grid-area: stats;
   display: grid;
   gap: 0.75rem;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-areas:
+    "text"
+    "stats";
+  gap: 2.5rem;
+  align-items: center;
+  padding-left: 360px;
 }
 
 .hero-copy {
@@ -334,18 +349,19 @@ textarea {
 }
 
 @media (max-width: 900px) {
-  .hero-grid {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "picture"
-      "text"
-      "stats";
+  .hero {
+    min-height: 0;
   }
   .image-slot--hero {
-    min-height: 380px;
+    position: relative;
+    width: 100%;
     max-width: 320px;
-    margin: 0 auto;
+    height: 380px;
+    margin: 0 auto 2rem;
     border-radius: 50%;
+  }
+  .hero-content {
+    padding-left: 0;
   }
 }
 
@@ -668,15 +684,17 @@ textarea {
 }
 
 .image-slot--hero {
-  grid-area: picture;
-  width: 100%;
-  height: 100%;
-  min-height: 540px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 340px;
   border-radius: 0 100% 100% 0;
   margin: 0;
   border: 0;
   box-shadow: none;
   overflow: hidden;
+  z-index: 0;
 }
 
 .image-slot--workstation {
