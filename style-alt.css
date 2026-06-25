@@ -164,7 +164,7 @@ a:hover {
   top: auto;
   bottom: auto;
   left: auto;
-  width: 600px;
+  width: 1200px;
   height: auto;
   min-height: 0;
   aspect-ratio: 1 / 1;
@@ -843,7 +843,7 @@ textarea {
   }
   .image-slot--hero {
     grid-column: 1;
-    width: 400px;
+    width: 800px;
   }
   .contact-layout {
     grid-template-columns: 1fr;
