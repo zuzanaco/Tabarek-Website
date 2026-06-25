@@ -8,14 +8,17 @@
       meta: {
         titleHome: "Tabarek Khazraj — Vertretungs-Apothekerin",
         titleServices: "Leistungen — Tabarek Khazraj",
+        titleAbout: "Über mich — Tabarek Khazraj",
         titleContact: "Kontakt — Tabarek Khazraj",
         titleThanks: "Danke — Anfrage erhalten",
         descHome: "Tabarek Khazraj bietet flexible Vertretungen für Apotheken in Deutschland.",
         descServices: "Leistungen von Tabarek Khazraj — Apothekenvertretung, Kundenbetreuung, Rezeptkontrolle und mehr.",
+        descAbout: "Über Tabarek Khazraj — Hintergrund, Sprachkenntnisse und Arbeitsweise.",
         descContact: "Kontakt zu Tabarek Khazraj — Anfrage für eine Apothekenvertretung senden."
       },
       nav: {
         home: "Home",
+        about: "Über mich",
         services: "Leistungen",
         contact: "Kontakt",
         mainAria: "Hauptnavigation"
@@ -36,7 +39,8 @@
         stat1Sub: "Einsatz nach Absprache",
         stat2Title: "Vor Ort",
         stat2Sub: "Apothekenvertretung in Ihrer Region",
-        cardAria: "Kurzprofil"
+        cardAria: "Kurzprofil",
+        portraitAlt: "Porträt von Tabarek Khazraj"
       },
       about: {
         title: "Pharmazeutische Unterstützung, wenn sie gebraucht wird",
@@ -47,6 +51,29 @@
         card2Body: "Verlässliche Vertretung für Nacht-, Wochenend- und Feiertagsdienste.",
         card3Title: "Team-Entlastung",
         card3Body: "Unterstützung bei Urlaub, Krankheit, Fortbildung oder hoher Auslastung."
+      },
+      aboutpage: {
+        title: "Über mich",
+        intro: "Lernen Sie mich kennen — Hintergrund, Sprachen und warum Ihre Apotheke bei mir in sicheren Händen ist.",
+        steckbriefTitle: "Steckbrief",
+        steckbriefP1: "Platzhalter — kurze Vorstellung: Wer bin ich, wo habe ich Pharmazie studiert und welche Stationen gehören zu meinem Werdegang?",
+        steckbriefP2: "Platzhalter — bisherige Tätigkeiten: Erfahrungen in Offizin-Apotheken, Schwerpunkte (z. B. Rezeptur, BtM, Medizinalcannabis), Verantwortungsbereiche.",
+        steckbriefP3: "Platzhalter — aktueller Antrieb: Was motiviert mich als Vertretungsapothekerin zu arbeiten und was möchte ich für Ihre Apotheke beitragen?",
+        languagesTitle: "Sprachkenntnisse",
+        languagesIntro: "Sprachen, in denen ich Kund*innen, Ärzt*innen und Teams sicher beraten kann.",
+        langDe: "Deutsch",
+        langIt: "Italienisch",
+        langEn: "Englisch",
+        langEs: "Spanisch",
+        langTr: "Türkisch",
+        langSv: "Schwedisch",
+        langRu: "Russisch",
+        whyTitle: "Weshalb Ihre Apotheke bei mir in sicheren Händen ist",
+        whyP1: "Platzhalter — Zuverlässigkeit und Verantwortung: wie ich als diensthabende Apothekerin gearbeitet habe und welche Verantwortung ich früh übernommen habe.",
+        whyP2: "Platzhalter — Stärken in der Beratung: wie ich mit anspruchsvollen Situationen umgehe, Konflikte entschärfe und mit Empathie auf Kund*innen eingehe.",
+        whyP3: "Platzhalter — schnelle Auffassungsgabe: wie ich mich rasch in neue Warenwirtschaftssysteme und Teams einarbeite.",
+        whyCta: "Anfrage senden",
+        portraitAlt: "Porträt von Tabarek Khazraj"
       },
       reviews: {
         title: "Bewertungen",
@@ -127,14 +154,17 @@
       meta: {
         titleHome: "Tabarek Khazraj — Locum Pharmacist",
         titleServices: "Services — Tabarek Khazraj",
+        titleAbout: "About — Tabarek Khazraj",
         titleContact: "Contact — Tabarek Khazraj",
         titleThanks: "Thank you — Inquiry received",
         descHome: "Tabarek Khazraj offers flexible locum cover for pharmacies across Germany.",
         descServices: "Services by Tabarek Khazraj — pharmacy cover, customer care, prescription checks and more.",
+        descAbout: "About Tabarek Khazraj — background, languages and working style.",
         descContact: "Get in touch with Tabarek Khazraj to request a locum cover assignment."
       },
       nav: {
         home: "Home",
+        about: "About",
         services: "Services",
         contact: "Contact",
         mainAria: "Main navigation"
@@ -155,7 +185,8 @@
         stat1Sub: "Assignments by arrangement",
         stat2Title: "On-site",
         stat2Sub: "Pharmacy cover in your region",
-        cardAria: "Short profile"
+        cardAria: "Short profile",
+        portraitAlt: "Portrait of Tabarek Khazraj"
       },
       about: {
         title: "Pharmaceutical support when you need it",
@@ -166,6 +197,29 @@
         card2Body: "Reliable cover for night, weekend and holiday services.",
         card3Title: "Team relief",
         card3Body: "Support during holidays, sick leave, training or high workload."
+      },
+      aboutpage: {
+        title: "About me",
+        intro: "Get to know me — background, languages, and why your pharmacy is in safe hands with me.",
+        steckbriefTitle: "Profile",
+        steckbriefP1: "Placeholder — short intro: who I am, where I studied pharmacy, and the stations in my career so far.",
+        steckbriefP2: "Placeholder — experience: roles in community pharmacies, focus areas (e.g. formulation, narcotics, medicinal cannabis), areas of responsibility.",
+        steckbriefP3: "Placeholder — what drives me: why I work as a locum pharmacist and what I want to bring to your pharmacy.",
+        languagesTitle: "Languages",
+        languagesIntro: "Languages I can use confidently with customers, prescribers and teams.",
+        langDe: "German",
+        langIt: "Italian",
+        langEn: "English",
+        langEs: "Spanish",
+        langTr: "Turkish",
+        langSv: "Swedish",
+        langRu: "Russian",
+        whyTitle: "Why your pharmacy is in safe hands with me",
+        whyP1: "Placeholder — reliability and responsibility: how I worked as the responsible pharmacist early in my career and the responsibility I took on.",
+        whyP2: "Placeholder — strength in patient advice: how I handle demanding situations, de-escalate, and meet customers with empathy and experience.",
+        whyP3: "Placeholder — quick learner: how I get up to speed with new ERP systems and teams fast.",
+        whyCta: "Send inquiry",
+        portraitAlt: "Portrait of Tabarek Khazraj"
       },
       reviews: {
         title: "Reviews",

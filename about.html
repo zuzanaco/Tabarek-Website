@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Über Tabarek Khazraj — Hintergrund, Sprachkenntnisse und Arbeitsweise."
+    />
+    <title>Über mich — Tabarek Khazraj</title>
+    <script>
+      (function () {
+        try {
+          var d = localStorage.getItem("tabarek.design");
+          if (d !== "v1" && d !== "v2") d = "v1";
+          var l = document.createElement("link");
+          l.rel = "stylesheet";
+          l.id = "theme-link";
+          l.href = d === "v2" ? "style-alt.css" : "style.css";
+          document.head.appendChild(l);
+        } catch (e) {
+          var l = document.createElement("link");
+          l.rel = "stylesheet";
+          l.id = "theme-link";
+          l.href = "style.css";
+          document.head.appendChild(l);
+        }
+      })();
+    </script>
+  </head>
+  <body data-page="About">
+    <header class="top-nav">
+      <div class="container top-nav__inner">
+        <a class="top-nav__brand" href="index.html">Tabarek Khazraj</a>
+        <nav class="top-nav__links" aria-label="Hauptnavigation" data-i18n-attr="aria-label:nav.mainAria">
+          <a href="index.html" data-nav="home" data-i18n="nav.home">Home</a>
+          <a href="about.html" data-nav="about" aria-current="page" data-i18n="nav.about">Über mich</a>
+          <a href="leistungen.html" data-nav="services" data-i18n="nav.services">Leistungen</a>
+          <a href="kontakt.html" data-nav="contact" data-i18n="nav.contact">Kontakt</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Sprache" data-i18n-attr="aria-label:lang.switchAria">
+          <button type="button" data-lang="de" aria-pressed="true" data-i18n="lang.de">DE</button>
+          <button type="button" data-lang="en" aria-pressed="false" data-i18n="lang.en">EN</button>
+        </div>
+        <div class="design-switch" role="group" aria-label="Design">
+          <button type="button" data-design="v1" aria-pressed="true">V1</button>
+          <button type="button" data-design="v2" aria-pressed="false">V2</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="container page-header">
+        <h1 data-i18n="aboutpage.title">Über mich</h1>
+        <p class="intro-text" data-i18n="aboutpage.intro">
+          Lernen Sie mich kennen — Hintergrund, Sprachen und warum Ihre
+          Apotheke bei mir in sicheren Händen ist.
+        </p>
+      </section>
+
+      <!-- TODO: Biografie, Ausbildung, Stationen — bitte durch Tabareks echten Steckbrief ersetzen. -->
+      <section class="container section" id="steckbrief">
+        <h2 data-i18n="aboutpage.steckbriefTitle">Steckbrief</h2>
+        <div class="profile-layout">
+          <figure class="image-slot image-slot--profile">
+            <img src="images/profile.jpg" alt="Porträt von Tabarek Khazraj" data-i18n-attr="alt:aboutpage.portraitAlt" onerror="this.style.display='none'" />
+            <figcaption class="image-slot__caption" data-i18n="aboutpage.portraitAlt">Porträt von Tabarek Khazraj</figcaption>
+          </figure>
+          <div class="profile-text">
+            <p data-i18n="aboutpage.steckbriefP1">
+              Platzhalter — kurze Vorstellung: Wer bin ich, wo habe ich
+              Pharmazie studiert und welche Stationen gehören zu meinem
+              Werdegang?
+            </p>
+            <p data-i18n="aboutpage.steckbriefP2">
+              Platzhalter — bisherige Tätigkeiten: Erfahrungen in
+              Offizin-Apotheken, Schwerpunkte (z. B. Rezeptur, BtM,
+              Medizinalcannabis), Verantwortungsbereiche.
+            </p>
+            <p data-i18n="aboutpage.steckbriefP3">
+              Platzhalter — aktueller Antrieb: Was motiviert mich als
+              Vertretungsapothekerin zu arbeiten und was möchte ich für Ihre
+              Apotheke beitragen?
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- TODO: Sprachkenntnisse & Prozentwerte an Tabareks tatsächliche Niveaus anpassen. -->
+      <section class="container section" id="sprachen">
+        <h2 data-i18n="aboutpage.languagesTitle">Sprachkenntnisse</h2>
+        <p class="intro-text" data-i18n="aboutpage.languagesIntro">
+          Sprachen, in denen ich Kund*innen, Ärzt*innen und Teams sicher
+          beraten kann.
+        </p>
+        <ul class="language-list">
+          <li><span data-i18n="aboutpage.langDe">Deutsch</span><span class="language-level">100%</span></li>
+          <li><span data-i18n="aboutpage.langIt">Italienisch</span><span class="language-level">100%</span></li>
+          <li><span data-i18n="aboutpage.langEn">Englisch</span><span class="language-level">90%</span></li>
+          <li><span data-i18n="aboutpage.langEs">Spanisch</span><span class="language-level">70%</span></li>
+          <li><span data-i18n="aboutpage.langTr">Türkisch</span><span class="language-level">50%</span></li>
+          <li><span data-i18n="aboutpage.langSv">Schwedisch</span><span class="language-level">40%</span></li>
+          <li><span data-i18n="aboutpage.langRu">Russisch</span><span class="language-level">40%</span></li>
+        </ul>
+      </section>
+
+      <!-- TODO: Diese Absätze sind Platzhalter — bitte mit Tabareks eigenem Text füllen. -->
+      <section class="container section why-hire" id="weshalb">
+        <h2 data-i18n="aboutpage.whyTitle">
+          Weshalb Ihre Apotheke bei mir in sicheren Händen ist
+        </h2>
+        <p data-i18n="aboutpage.whyP1">
+          Platzhalter — Zuverlässigkeit und Verantwortung: wie ich als
+          diensthabende Apothekerin gearbeitet habe und welche Verantwortung
+          ich früh übernommen habe.
+        </p>
+        <p data-i18n="aboutpage.whyP2">
+          Platzhalter — Stärken in der Beratung: wie ich mit anspruchsvollen
+          Situationen umgehe, Konflikte entschärfe und mit Empathie auf
+          Kund*innen eingehe.
+        </p>
+        <p data-i18n="aboutpage.whyP3">
+          Platzhalter — schnelle Auffassungsgabe: wie ich mich rasch in neue
+          Warenwirtschaftssysteme und Teams einarbeite.
+        </p>
+        <a class="button" href="kontakt.html" data-i18n="aboutpage.whyCta">Anfrage senden</a>
+      </section>
+
+      <section class="container section" id="software-skills">
+        <h2 data-i18n="software.title">Software Skills</h2>
+        <p class="intro-text" data-i18n="software.intro">
+          Mit diesen Warenwirtschafts- und Laborprogrammen habe ich bereits
+          Erfahrung gesammelt.
+        </p>
+        <ul class="software-grid">
+          <li class="software-card">Infopharm</li>
+          <li class="software-card">ADG</li>
+          <li class="software-card">Cida</li>
+          <li class="software-card">Prokas</li>
+          <li class="software-card">Dr. Lennartz Laborprogramm</li>
+          <li class="software-card">ScanAdhoc</li>
+          <li class="software-card">BtM Sys</li>
+          <li class="software-card">Pharmatechnik</li>
+          <li class="software-card">Aposoft</li>
+          <li class="software-card">ALG Online</li>
+          <li class="software-card">Lauer-Fischer</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <p data-i18n="footer.copy">&copy; 2026 Tabarek Khazraj. Vertretungs-Apothekerin.</p>
+      </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+  </body>
+</html>

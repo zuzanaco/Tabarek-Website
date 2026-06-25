@@ -1,6 +1,14 @@
 # Vertretungs-Apothekerin — Tabarek Khazraj
 
-Diese statische Website präsentiert die Leistungen von Tabarek Khazraj (Vertretungs-Apothekerin). Sie besteht aus mehreren Seiten: `index.html` (Home), `leistungen.html`, `kontakt.html` sowie `thankyou.html`.
+Diese statische Website präsentiert die Leistungen von Tabarek Khazraj (Vertretungs-Apothekerin). Sie besteht aus mehreren Seiten: `index.html` (Home), `about.html` (Über mich), `leistungen.html`, `kontakt.html` sowie `thankyou.html`.
+
+## Bilder
+
+Profilbilder liegen unter `images/`. Aktuell wird erwartet:
+
+- `images/profile.jpg` — wird im Hero (Home) und auf der About-Seite angezeigt
+
+Solange die Datei fehlt, wird im Bild-Slot nur die Hintergrundfarbe (in V1 cremefarben, in V2 hellviolett) angezeigt. Drop-in der Datei genügt, das HTML referenziert sie bereits.
 
 ## Design-Umschaltung (V1 / V2)
 
