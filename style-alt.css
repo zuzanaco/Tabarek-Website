@@ -104,52 +104,49 @@ a:hover {
 
 /* ---------- Hero ---------- */
 
-/* V2 original layout: override V1's full-bleed positioning so
-   the hero is a simple 2-column grid (text left, image right)
-   with the image as a soft blob and the stats hidden. */
+/* V2 Sophia layout: centered title block at the top, then a
+   2-column body with all the text on the left and the soft
+   blob portrait on the right. */
 
 .hero {
   position: static;
   overflow: visible;
   min-height: 0;
   padding: 4rem 0 5rem;
+  display: block;
+}
+
+.hero-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero-title__name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #8b7ad6;
+  margin: 0 0 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+.hero-title__heading {
+  font-size: clamp(2.4rem, 4vw, 3.4rem);
+  font-weight: 800;
+  color: #1a1a2e;
+  margin: 0;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.hero-body {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
   align-items: center;
   gap: 3rem;
 }
 
-.image-slot--hero {
-  grid-column: 2;
-  position: static;
-  top: auto;
-  bottom: auto;
-  left: auto;
-  width: 440px;
-  height: auto;
-  min-height: 0;
-  aspect-ratio: 1 / 1;
-  border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
-  background: linear-gradient(135deg, #e9e3ff 0%, #f5e9ff 100%);
-  margin: 0 auto;
-  border: 0;
-  box-shadow: 0 20px 40px rgba(139, 122, 214, 0.18);
-}
-
-.hero-content {
-  grid-column: 1;
-  padding-left: 0;
-  display: grid;
-  grid-template-areas:
-    "text"
-    "stats";
-  gap: 2rem;
-  align-items: start;
-}
-
 .hero-copy {
-  grid-area: text;
-  max-width: 560px;
+  max-width: 520px;
 }
 
 .hero .eyebrow {
@@ -184,19 +181,20 @@ a:hover {
   flex-wrap: wrap;
 }
 
-.hero-card {
-  grid-area: stats;
-  display: grid;
-  gap: 0.75rem;
-  padding: 0;
-  background: none;
+.image-slot--hero {
+  position: static;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  width: 440px;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 1 / 1;
+  border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+  background: linear-gradient(135deg, #e9e3ff 0%, #f5e9ff 100%);
+  margin: 0 auto;
   border: 0;
-}
-
-/* V2: hide the Flexible / On-site stat cards so the hero is
-   just the headline + portrait. V1 still shows them. */
-.hero-card .stat {
-  display: none;
+  box-shadow: 0 20px 40px rgba(139, 122, 214, 0.18);
 }
 
 /* ---------- Buttons ---------- */
