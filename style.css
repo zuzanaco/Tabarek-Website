@@ -692,26 +692,31 @@ textarea {
   padding: 0;
   margin: 1.5rem 0 0;
   display: grid;
-  gap: 0.6rem;
+  gap: 0.5rem;
+  max-width: 360px;
 }
 
 .language-list li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.8rem 1.1rem;
-  border-radius: 14px;
+  padding: 0.6rem 1rem;
+  border-radius: 12px;
   background: #f8f4ed;
   border: 1px solid #efe8df;
   font-weight: 600;
   color: #184e47;
   margin: 0;
+  font-size: 0.92rem;
 }
 
-.language-level {
-  color: #b96f2a;
-  font-weight: 700;
-  font-variant-numeric: tabular-nums;
+.language-list li::after {
+  content: "";
+  display: block;
+  width: calc(60px * var(--level, 100) / 100);
+  height: 5px;
+  border-radius: 999px;
+  background: #b96f2a;
 }
 
 @media (max-width: 760px) {

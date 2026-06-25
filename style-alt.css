@@ -849,26 +849,31 @@ body::after {
   padding: 0;
   margin: 1.5rem 0 0;
   display: grid;
-  gap: 0.6rem;
+  gap: 0.5rem;
+  max-width: 360px;
 }
 
 .language-list li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.9rem 1.2rem;
-  border-radius: 14px;
+  padding: 0.55rem 0.9rem;
+  border-radius: 12px;
   background: #ffffff;
   border: 1px solid rgba(139, 122, 214, 0.1);
   font-weight: 500;
   color: #1a1a2e;
   margin: 0;
+  font-size: 0.9rem;
 }
 
-.language-level {
-  color: #8b7ad6;
-  font-weight: 700;
-  font-variant-numeric: tabular-nums;
+.language-list li::after {
+  content: "";
+  display: block;
+  width: calc(60px * var(--level, 100) / 100);
+  height: 5px;
+  border-radius: 999px;
+  background: #8b7ad6;
 }
 
 /* ---------- Responsive ---------- */
