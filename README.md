@@ -2,6 +2,15 @@
 
 Diese statische Website präsentiert die Leistungen von Tabarek Khazraj (Vertretungs-Apothekerin). Sie besteht aus mehreren Seiten: `index.html` (Home), `leistungen.html`, `kontakt.html` sowie `thankyou.html`.
 
+## Design-Umschaltung (V1 / V2)
+
+Im Header jeder Seite gibt es einen `V1 | V2`-Schalter. Damit lässt sich zwischen zwei Stylesheets umschalten:
+
+- `style.css` — aktuelles Design (Vorschlag 1)
+- `style-alt.css` — alternativer Entwurf (Vorschlag 2)
+
+Die Auswahl wird in `localStorage` unter `tabarek.design` gespeichert, sodass sie Seitenwechsel und Reloads überdauert. Eine kleine "V2 PREVIEW"-Markierung unten links erscheint nur, wenn V2 aktiv ist.
+
 Lokales Arbeiten
 
 ```bash
