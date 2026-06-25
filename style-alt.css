@@ -104,9 +104,9 @@ a:hover {
 
 /* ---------- Hero ---------- */
 
-/* V2 Sophia layout: centered title block at the top, then a
-   2-column body with all the text on the left and the soft
-   blob portrait on the right. */
+/* V2 layout: 2-column body with all text (eyebrow + h1 + lead
+   + button) on the left and the soft blob portrait on the
+   right. */
 
 .hero {
   position: static;
@@ -114,28 +114,6 @@ a:hover {
   min-height: 0;
   padding: 4rem 0 5rem;
   display: block;
-}
-
-.hero-title {
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-.hero-title__name {
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: #8b7ad6;
-  margin: 0 0 0.5rem;
-  letter-spacing: 0.02em;
-}
-
-.hero-title__heading {
-  font-size: clamp(2.4rem, 4vw, 3.4rem);
-  font-weight: 800;
-  color: #1a1a2e;
-  margin: 0;
-  letter-spacing: -0.02em;
-  line-height: 1.1;
 }
 
 .hero-body {
