@@ -6,7 +6,7 @@ Diese statische Website präsentiert die Leistungen von Tabarek Khazraj (Vertret
 
 Profilbilder liegen unter `images/`. Aktuell wird erwartet:
 
-- `images/profile.png` — wird im Hero (Home) und auf der About-Seite angezeigt
+- `images/profile.png` — wird im Hero (Home) angezeigt
 - `images/profile-workstation.png` — wird auf der About-Seite unter dem Steckbrief als breites Bild angezeigt
 
 Solange die Datei fehlt, wird im Bild-Slot nur die Hintergrundfarbe (in V1 cremefarben, in V2 hellviolett) angezeigt. Drop-in der Datei genügt, das HTML referenziert sie bereits.

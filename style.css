@@ -645,14 +645,6 @@ textarea {
   border: 3px solid rgba(255, 255, 255, 0.35);
 }
 
-.image-slot--profile {
-  aspect-ratio: 3 / 4;
-  border-radius: 24px;
-  border: 1px solid #efe8df;
-  max-width: 320px;
-  width: 100%;
-}
-
 .image-slot--workstation {
   aspect-ratio: 4 / 3;
   border-radius: 24px;
@@ -719,8 +711,5 @@ textarea {
 @media (max-width: 760px) {
   .profile-layout {
     grid-template-columns: 1fr;
-  }
-  .image-slot--profile {
-    margin: 0 auto;
   }
 }
