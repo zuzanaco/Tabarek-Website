@@ -199,6 +199,12 @@ a:hover {
   font-size: 0.9rem;
 }
 
+/* V2: hide the Flexible / On-site stat cards so the hero is
+   just the headline + portrait. V1 still shows them. */
+.hero-portrait .stat {
+  display: none;
+}
+
 /* ---------- Buttons ---------- */
 
 .button {
