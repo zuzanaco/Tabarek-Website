@@ -4,25 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Danke — Anfrage erhalten</title>
-    <script>
-      (function () {
-        try {
-          var d = localStorage.getItem("tabarek.design");
-          if (d !== "v1" && d !== "v2") d = "v1";
-          var l = document.createElement("link");
-          l.rel = "stylesheet";
-          l.id = "theme-link";
-          l.href = d === "v2" ? "style-alt.css" : "style.css";
-          document.head.appendChild(l);
-        } catch (e) {
-          var l = document.createElement("link");
-          l.rel = "stylesheet";
-          l.id = "theme-link";
-          l.href = "style.css";
-          document.head.appendChild(l);
-        }
-      })();
-    </script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body data-page="Thanks">
     <header class="top-nav">
@@ -39,8 +21,8 @@
         <button type="button" data-lang="en" aria-pressed="false" data-i18n="lang.en">EN</button>
       </div>
       <div class="design-switch" role="group" aria-label="Design">
-        <button type="button" data-design="v1" aria-pressed="true">V1</button>
-        <button type="button" data-design="v2" aria-pressed="false">V2</button>
+        <button type="button" data-design="v1" aria-pressed="true" disabled>V1</button>
+        <a href="thankyou.v2.html" class="design-switch__btn">V2</a>
       </div>
       </div>
     </header>

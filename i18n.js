@@ -387,39 +387,6 @@
         applyLang(btn.getAttribute("data-lang"));
       });
     });
-
-    applyDesign(getStoredDesign());
-    document.querySelectorAll(".design-switch [data-design]").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        applyDesign(btn.getAttribute("data-design"));
-      });
-    });
-  }
-
-  const DESIGN_KEY = "tabarek.design";
-  const DEFAULT_DESIGN = "v1";
-
-  function getStoredDesign() {
-    try {
-      const v = localStorage.getItem(DESIGN_KEY);
-      if (v === "v1" || v === "v2") return v;
-    } catch (e) {}
-    return DEFAULT_DESIGN;
-  }
-
-  function applyDesign(design) {
-    if (design !== "v1" && design !== "v2") design = DEFAULT_DESIGN;
-    const link = document.getElementById("theme-link");
-    if (link) {
-      link.setAttribute("href", design === "v2" ? "style-alt.css" : "style.css");
-    }
-    document.querySelectorAll(".design-switch [data-design]").forEach((btn) => {
-      btn.setAttribute("aria-pressed", btn.getAttribute("data-design") === design ? "true" : "false");
-    });
-    document.documentElement.setAttribute("data-design", design);
-    try {
-      localStorage.setItem(DESIGN_KEY, design);
-    } catch (e) {}
   }
 
   if (document.readyState === "loading") {

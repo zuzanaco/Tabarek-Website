@@ -1,6 +1,11 @@
 # Vertretungs-Apothekerin — Tabarek Khazraj
 
-Diese statische Website präsentiert die Leistungen von Tabarek Khazraj (Vertretungs-Apothekerin). Sie besteht aus mehreren Seiten: `index.html` (Home), `about.html` (Über mich), `leistungen.html`, `kontakt.html` sowie `thankyou.html`.
+Diese statische Website präsentiert die Leistungen von Tabarek Khazraj (Vertretungs-Apothekerin). Sie besteht aus mehreren Seiten in zwei Designvarianten:
+
+- **V1** (Standard): `index.html`, `about.html`, `leistungen.html`, `kontakt.html`, `thankyou.html`
+- **V2** (Sophia-Layout): `index.v2.html`, `about.v2.html`, `leistungen.v2.html`, `kontakt.v2.html`, `thankyou.v2.html`
+
+Die V1/V2-Umschaltung in der Navigation ist eine echte Seiten-Navigation, kein reiner Stylesheet-Swap — beide Varianten haben eigene HTML-Strukturen und können sich unabhängig voneinander weiterentwickeln. Die Sprachauswahl (DE/EN) wird in `localStorage` gespeichert und gilt versionsübergreifend.
 
 ## Bilder
 

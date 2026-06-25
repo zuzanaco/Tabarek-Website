@@ -647,7 +647,8 @@ textarea {
   gap: 2px;
 }
 
-.design-switch button {
+.design-switch button,
+.design-switch__btn {
   appearance: none;
   background: transparent;
   border: 0;
@@ -659,40 +660,28 @@ textarea {
   padding: 0.35rem 0.7rem;
   border-radius: 999px;
   cursor: pointer;
+  text-decoration: none;
 }
 
-.design-switch button:hover {
+.design-switch button:hover,
+.design-switch__btn:hover {
   color: #8b7ad6;
+  text-decoration: none;
 }
 
-.design-switch button[aria-pressed="true"] {
+.design-switch button[aria-pressed="true"],
+.design-switch button:disabled {
   background: #1a1a2e;
   color: #ffffff;
+  cursor: default;
 }
 
-.design-switch button[aria-pressed="true"]:hover {
+.design-switch button[aria-pressed="true"]:hover,
+.design-switch button:disabled:hover {
   color: #ffffff;
 }
 
-/* V2 preview badge */
-body::after {
-  content: "V2 PREVIEW";
-  position: fixed;
-  bottom: 1rem;
-  left: 1rem;
-  background: #8b7ad6;
-  color: #ffffff;
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  padding: 0.35rem 0.7rem;
-  border-radius: 999px;
-  z-index: 20;
-  box-shadow: 0 8px 24px rgba(139, 122, 214, 0.3);
-  pointer-events: none;
-}
-
-/* ---------- Counters (V2 only, sits under the hero) ---------- */
+/* ---------- Counters (sits under the hero on the V2 home page) ---------- */
 
 .counters {
   display: grid;

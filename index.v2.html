@@ -8,55 +8,49 @@
       content="Tabarek Khazraj bietet flexible Vertretungen für Apotheken in Deutschland."
     />
     <title>Tabarek Khazraj — Vertretungs-Apothekerin</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-alt.css" />
   </head>
   <body data-page="Home">
     <header class="top-nav">
       <div class="container top-nav__inner">
-        <a class="top-nav__brand" href="index.html">Tabarek Khazraj</a>
+        <a class="top-nav__brand" href="index.v2.html">Tabarek Khazraj</a>
         <nav class="top-nav__links" aria-label="Hauptnavigation" data-i18n-attr="aria-label:nav.mainAria">
-          <a href="index.html" data-nav="home" aria-current="page" data-i18n="nav.home">Home</a>
-          <a href="about.html" data-nav="about" data-i18n="nav.about">Über mich</a>
-          <a href="leistungen.html" data-nav="services" data-i18n="nav.services">Leistungen</a>
-          <a href="kontakt.html" data-nav="contact" data-i18n="nav.contact">Kontakt</a>
+          <a href="index.v2.html" data-nav="home" aria-current="page" data-i18n="nav.home">Home</a>
+          <a href="about.v2.html" data-nav="about" data-i18n="nav.about">Über mich</a>
+          <a href="leistungen.v2.html" data-nav="services" data-i18n="nav.services">Leistungen</a>
+          <a href="kontakt.v2.html" data-nav="contact" data-i18n="nav.contact">Kontakt</a>
         </nav>
         <div class="lang-switch" role="group" aria-label="Sprache" data-i18n-attr="aria-label:lang.switchAria">
           <button type="button" data-lang="de" aria-pressed="true" data-i18n="lang.de">DE</button>
           <button type="button" data-lang="en" aria-pressed="false" data-i18n="lang.en">EN</button>
         </div>
         <div class="design-switch" role="group" aria-label="Design">
-          <button type="button" data-design="v1" aria-pressed="true" disabled>V1</button>
-          <a href="index.v2.html" class="design-switch__btn">V2</a>
+          <a href="index.html" class="design-switch__btn">V1</a>
+          <button type="button" data-design="v2" aria-pressed="true" disabled>V2</button>
         </div>
       </div>
     </header>
 
     <header class="hero">
-      <figure class="image-slot image-slot--hero">
-        <img src="images/profile.png" alt="Tabarek Khazraj" data-i18n-attr="alt:hero.portraitAlt" onerror="this.style.display='none'" />
-      </figure>
-      <div class="container hero-content">
-        <div class="hero-copy">
-          <p class="eyebrow" data-i18n="hero.eyebrow">Vertretungs-Apothekerin</p>
-          <h1 data-i18n="hero.title">Tabarek Khazraj</h1>
-          <p class="lead" data-i18n="hero.lead">
-            Zuverlässige pharmazeutische Vertretung für Apotheken, Notdienste
-            und kurzfristige Personalengpässe.
-          </p>
-          <div class="hero-buttons">
-            <a class="button" href="kontakt.html" data-i18n="hero.ctaPrimary">Kontaktiere mich</a>
-          </div>
+      <div class="container">
+        <div class="hero-title">
+          <p class="hero-title__name" data-i18n="hero.title">Tabarek Khazraj</p>
+          <h1 class="hero-title__heading" data-i18n="hero.eyebrow">Vertretungs-Apothekerin</h1>
         </div>
-        <aside class="hero-card" aria-label="Kurzprofil" data-i18n-attr="aria-label:hero.cardAria">
-          <div class="stat">
-            <p data-i18n="hero.stat1Title">Flexibel</p>
-            <span data-i18n="hero.stat1Sub">Einsatz nach Absprache</span>
+        <div class="hero-body">
+          <div class="hero-copy">
+            <p class="lead" data-i18n="hero.lead">
+              Zuverlässige pharmazeutische Vertretung für Apotheken, Notdienste
+              und kurzfristige Personalengpässe.
+            </p>
+            <div class="hero-buttons">
+              <a class="button" href="kontakt.v2.html" data-i18n="hero.ctaPrimary">Kontaktiere mich</a>
+            </div>
           </div>
-          <div class="stat">
-            <p data-i18n="hero.stat2Title">Vor Ort</p>
-            <span data-i18n="hero.stat2Sub">Apothekenvertretung in Ihrer Region</span>
-          </div>
-        </aside>
+          <figure class="image-slot image-slot--hero">
+            <img src="images/profile.png" alt="Tabarek Khazraj" data-i18n-attr="alt:hero.portraitAlt" onerror="this.style.display='none'" />
+          </figure>
+        </div>
       </div>
     </header>
 
@@ -167,7 +161,7 @@
           davon überzeugt, dass ich Ihnen eine große Unterstützung sein werde —
           im Raum Berlin und Brandenburg, auf Anfrage auch bundesweit.
         </p>
-        <a class="button" href="kontakt.html" data-i18n="why.cta">Anfrage senden</a>
+        <a class="button" href="kontakt.v2.html" data-i18n="why.cta">Anfrage senden</a>
       </section>
     </main>
 
