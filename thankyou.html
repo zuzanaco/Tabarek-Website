@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Danke — Anfrage erhalten</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-page="Thanks">
+    <header class="top-nav">
+      <div class="container top-nav__inner">
+        <a class="top-nav__brand" href="index.html">Tabarek Khazraj</a>
+        <nav class="top-nav__links" aria-label="Hauptnavigation" data-i18n-attr="aria-label:nav.mainAria">
+        <a href="index.html" data-nav="home" data-i18n="nav.home">Home</a>
+        <a href="about.html" data-nav="about" data-i18n="nav.about">Über mich</a>
+        <a href="leistungen.html" data-nav="services" data-i18n="nav.services">Leistungen</a>
+          <a href="kontakt.html" data-nav="contact" data-i18n="nav.contact">Kontakt</a>
+        </nav>
+      <div class="lang-switch" role="group" aria-label="Sprache" data-i18n-attr="aria-label:lang.switchAria">
+        <button type="button" data-lang="de" aria-pressed="true" data-i18n="lang.de">DE</button>
+        <button type="button" data-lang="en" aria-pressed="false" data-i18n="lang.en">EN</button>
+      </div>
+      <div class="design-switch" role="group" aria-label="Design">
+        <button type="button" data-design="v1" aria-pressed="true" disabled>V1</button>
+        <a href="thankyou.v2.html" class="design-switch__btn">V2</a>
+      </div>
+      </div>
+    </header>
+
+    <main class="container" style="padding:6rem 0;">
+      <section class="about" style="text-align:center;">
+        <h1 data-i18n="thankyou.title">Danke — Ihre Anfrage wurde gesendet</h1>
+        <p data-i18n="thankyou.body">
+          Ich habe Ihre Nachricht erhalten und melde mich so schnell wie möglich bei Ihnen.
+        </p>
+        <p>
+          <span data-i18n="thankyou.back">Zurück zur Startseite:</span>
+          <a href="index.html" data-i18n="thankyou.backLink">Startseite</a>
+        </p>
+      </section>
+    </main>
+
+    <script src="i18n.js"></script>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Leistungen von Tabarek Khazraj — Apothekenvertretung, Kundenbetreuung, Rezeptkontrolle und mehr."
+    />
+    <title>Leistungen — Tabarek Khazraj</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-page="Services">
+    <header class="top-nav">
+      <div class="container top-nav__inner">
+        <a class="top-nav__brand" href="index.html">Tabarek Khazraj</a>
+        <nav class="top-nav__links" aria-label="Hauptnavigation" data-i18n-attr="aria-label:nav.mainAria">
+          <a href="index.html" data-nav="home" data-i18n="nav.home">Home</a>
+          <a href="about.html" data-nav="about" data-i18n="nav.about">Über mich</a>
+          <a href="leistungen.html" data-nav="services" aria-current="page" data-i18n="nav.services">Leistungen</a>
+          <a href="kontakt.html" data-nav="contact" data-i18n="nav.contact">Kontakt</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Sprache" data-i18n-attr="aria-label:lang.switchAria">
+          <button type="button" data-lang="de" aria-pressed="true" data-i18n="lang.de">DE</button>
+          <button type="button" data-lang="en" aria-pressed="false" data-i18n="lang.en">EN</button>
+        </div>
+        <div class="design-switch" role="group" aria-label="Design">
+          <button type="button" data-design="v1" aria-pressed="true" disabled>V1</button>
+          <a href="leistungen.v2.html" class="design-switch__btn">V2</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="container page-header">
+        <h1 data-i18n="services.title">Leistungen</h1>
+        <!-- TODO: region ggf. anpassen (z. B. an Tabareks tatsächlichen Einsatzgebiet) -->
+        <p class="intro-text" data-i18n="services.intro">
+          Ich vertrete Sie bei allen personellen Umständen im Raum Berlin und
+          Brandenburg. Auf Anfrage auch gerne bundesweit. Aktuelle
+          Verfügbarkeiten gerne auf Anfrage.
+        </p>
+      </section>
+
+      <section class="container section" id="leistungen">
+        <div class="service-grid">
+          <article class="service-card">
+            <h3 data-i18n="services.s1Title">Chefvertretung</h3>
+            <p data-i18n="services.s1Body">Vertretung der Apothekenleitung bei Urlaub, Krankheit oder aus sonstigen Gründen.</p>
+          </article>
+          <article class="service-card">
+            <h3 data-i18n="services.s2Title">Kundenbetreuung</h3>
+            <p data-i18n="services.s2Body">Aktive Mitarbeit im Handverkauf.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-card__badge" data-i18n="services.badge">Nach Vereinbarung</span>
+            <h3 data-i18n="services.s3Title">Rezeptkontrolle</h3>
+            <p data-i18n="services.s3Body">Erfahrung mit ScanAdhoc und ALG-Online und auch klassisch ohne Hilfe einer Software.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-card__badge" data-i18n="services.badge">Nach Vereinbarung</span>
+            <h3 data-i18n="services.s4Title">Dienstplan</h3>
+            <p data-i18n="services.s4Body">Wenn gewünscht und bei längerer Vertretung.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-card__badge" data-i18n="services.badge">Nach Vereinbarung</span>
+            <h3 data-i18n="services.s5Title">Notdienst</h3>
+            <p data-i18n="services.s5Body">Auf Anfrage auch bundesweit.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-card__badge" data-i18n="services.badge">Nach Vereinbarung</span>
+            <h3 data-i18n="services.s6Title">Dokumentation</h3>
+            <p data-i18n="services.s6Body">Dokumentationspflichtige Arzneimittel wie BtM, Importe usw.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-card__badge" data-i18n="services.badge">Nach Vereinbarung</span>
+            <h3 data-i18n="services.s7Title">Feedback</h3>
+            <p data-i18n="services.s7Body">Zur Optimierung Ihrer Prozesse führe ich nach der Vertretung gerne ein Feedback-Gespräch mit Ihnen.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-card__badge" data-i18n="services.badge">Nach Vereinbarung</span>
+            <h3 data-i18n="services.s8Title">Freiberuflichkeit</h3>
+            <p data-i18n="services.s8Body">Beratung zu allem rund ums Thema Selbständigkeit für Apotheker*innen.</p>
+          </article>
+          <article class="service-card">
+            <span class="service-card__badge" data-i18n="services.badge">Nach Vereinbarung</span>
+            <h3 data-i18n="services.s9Title">Medizinalcannabis</h3>
+            <p data-i18n="services.s9Body">Konsultation zu Themen wie Beratung, Prüfung, Herstellung, Abgabe und Dokumentation.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="container section" id="software-skills">
+        <h2 data-i18n="software.title">Software Skills</h2>
+        <p class="intro-text" data-i18n="software.intro">
+          Mit diesen Warenwirtschafts- und Laborprogrammen habe ich bereits
+          Erfahrung gesammelt.
+        </p>
+        <ul class="software-grid">
+          <li class="software-card">Infopharm</li>
+          <li class="software-card">ADG</li>
+          <li class="software-card">Cida</li>
+          <li class="software-card">Prokas</li>
+          <li class="software-card">Dr. Lennartz Laborprogramm</li>
+          <li class="software-card">ScanAdhoc</li>
+          <li class="software-card">BtM Sys</li>
+          <li class="software-card">Pharmatechnik</li>
+          <li class="software-card">Aposoft</li>
+          <li class="software-card">ALG Online</li>
+          <li class="software-card">Lauer-Fischer</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <p data-i18n="footer.copy">&copy; 2026 Tabarek Khazraj. Vertretungs-Apothekerin.</p>
+      </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+  </body>
+</html>

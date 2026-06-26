@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Tabarek Khazraj bietet flexible Vertretungen für Apotheken in Deutschland."
+    />
+    <title>Tabarek Khazraj — Vertretungs-Apothekerin</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-page="Home">
+    <header class="top-nav">
+      <div class="container top-nav__inner">
+        <a class="top-nav__brand" href="index.html">Tabarek Khazraj</a>
+        <nav class="top-nav__links" aria-label="Hauptnavigation" data-i18n-attr="aria-label:nav.mainAria">
+          <a href="index.html" data-nav="home" aria-current="page" data-i18n="nav.home">Home</a>
+          <a href="about.html" data-nav="about" data-i18n="nav.about">Über mich</a>
+          <a href="leistungen.html" data-nav="services" data-i18n="nav.services">Leistungen</a>
+          <a href="kontakt.html" data-nav="contact" data-i18n="nav.contact">Kontakt</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Sprache" data-i18n-attr="aria-label:lang.switchAria">
+          <button type="button" data-lang="de" aria-pressed="true" data-i18n="lang.de">DE</button>
+          <button type="button" data-lang="en" aria-pressed="false" data-i18n="lang.en">EN</button>
+        </div>
+        <div class="design-switch" role="group" aria-label="Design">
+          <button type="button" data-design="v1" aria-pressed="true" disabled>V1</button>
+          <a href="index.v2.html" class="design-switch__btn">V2</a>
+        </div>
+      </div>
+    </header>
+
+    <header class="hero">
+      <figure class="image-slot image-slot--hero">
+        <img src="images/profile.png" alt="Tabarek Khazraj" data-i18n-attr="alt:hero.portraitAlt" onerror="this.style.display='none'" />
+      </figure>
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Vertretungs-Apothekerin</p>
+          <h1 data-i18n="hero.title">Tabarek Khazraj</h1>
+          <p class="lead" data-i18n="hero.lead">
+            Zuverlässige pharmazeutische Vertretung für Apotheken, Notdienste
+            und kurzfristige Personalengpässe.
+          </p>
+          <div class="hero-buttons">
+            <a class="button" href="kontakt.html" data-i18n="hero.ctaPrimary">Kontaktiere mich</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Kurzprofil" data-i18n-attr="aria-label:hero.cardAria">
+          <div class="stat">
+            <p data-i18n="hero.stat1Title">Flexibel</p>
+            <span data-i18n="hero.stat1Sub">Einsatz nach Absprache</span>
+          </div>
+          <div class="stat">
+            <p data-i18n="hero.stat2Title">Vor Ort</p>
+            <span data-i18n="hero.stat2Sub">Apothekenvertretung in Ihrer Region</span>
+          </div>
+        </aside>
+      </div>
+    </header>
+
+    <section class="container counters" id="counters" aria-label="Kennzahlen" data-i18n-attr="aria-label:counters.label">
+      <div class="counter">
+        <span class="counter__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        </span>
+        <span class="counter__value" data-i18n="counters.experienceValue">10+</span>
+        <span class="counter__label" data-i18n="counters.experienceLabel">Jahre Berufserfahrung</span>
+      </div>
+      <div class="counter">
+        <span class="counter__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l1.5-4h15L21 9"/><path d="M3 9v11h18V9"/><path d="M9 9v11"/><path d="M15 9v11"/></svg>
+        </span>
+        <span class="counter__value" data-i18n="counters.pharmaciesValue">20+</span>
+        <span class="counter__label" data-i18n="counters.pharmaciesLabel">Apotheken vertreten</span>
+      </div>
+      <div class="counter">
+        <span class="counter__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 1 1 9.5 4a6 6 0 0 0 10.5 10.5z"/></svg>
+        </span>
+        <span class="counter__value" data-i18n="counters.emergencyValue">100+</span>
+        <span class="counter__label" data-i18n="counters.emergencyLabel">Notdienste</span>
+      </div>
+      <div class="counter">
+        <span class="counter__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18"/><path d="M12 3a14 14 0 0 0 0 18"/></svg>
+        </span>
+        <span class="counter__value" data-i18n="counters.languagesValue">7</span>
+        <span class="counter__label" data-i18n="counters.languagesLabel">Sprachen</span>
+      </div>
+    </section>
+
+    <main>
+      <section class="container about" id="profil">
+        <h2 data-i18n="about.title">Pharmazeutische Unterstützung, wenn sie gebraucht wird</h2>
+        <p class="intro-text" data-i18n="about.intro">
+          Ich übernehme Vertretungen im Apothekenalltag, unterstütze Teams bei
+          planbaren Abwesenheiten und helfe bei kurzfristigen Engpässen.
+        </p>
+        <div class="grid">
+          <article>
+            <h3 data-i18n="about.card1Title">Tagesgeschäft</h3>
+            <p data-i18n="about.card1Body">Handverkauf, Beratung, Rezeptprüfung und pharmazeutische Betreuung.</p>
+          </article>
+          <article>
+            <h3 data-i18n="about.card2Title">Notdienst</h3>
+            <p data-i18n="about.card2Body">Verlässliche Vertretung für Nacht-, Wochenend- und Feiertagsdienste.</p>
+          </article>
+          <article>
+            <h3 data-i18n="about.card3Title">Team-Entlastung</h3>
+            <p data-i18n="about.card3Body">Unterstützung bei Urlaub, Krankheit, Fortbildung oder hoher Auslastung.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="container section" id="bewertungen">
+        <h2 data-i18n="reviews.title">Bewertungen</h2>
+        <p class="intro-text" data-i18n="reviews.lead">Was andere über mich sagen</p>
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <div class="testimonial-avatar" aria-hidden="true">B1</div>
+            <h3 class="testimonial-meta" data-i18n="reviews.b1Name">Bewertung 1</h3>
+            <p class="testimonial-role" data-i18n="reviews.b1Role">Apotheke</p>
+            <p class="testimonial-quote" data-i18n="reviews.b1Quote">
+              Platzhalter — diese Bewertung wird noch durch eine echte
+              Kundenreferenz ersetzt.
+            </p>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-avatar" aria-hidden="true">B2</div>
+            <h3 class="testimonial-meta" data-i18n="reviews.b2Name">Bewertung 2</h3>
+            <p class="testimonial-role" data-i18n="reviews.b2Role">Inhaber*in</p>
+            <p class="testimonial-quote" data-i18n="reviews.b2Quote">
+              Platzhalter — diese Bewertung wird noch durch eine echte
+              Kundenreferenz ersetzt.
+            </p>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-avatar" aria-hidden="true">B3</div>
+            <h3 class="testimonial-meta" data-i18n="reviews.b3Name">Bewertung 3</h3>
+            <p class="testimonial-role" data-i18n="reviews.b3Role">Apotheke</p>
+            <p class="testimonial-quote" data-i18n="reviews.b3Quote">
+              Platzhalter — diese Bewertung wird noch durch eine echte
+              Kundenreferenz ersetzt.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="container section why-hire" id="weshalb">
+        <h2 data-i18n="why.title">Weshalb Sie mich buchen sollten</h2>
+        <div class="why-grid">
+          <article class="why-card">
+            <h3 data-i18n="why.card1Title">Kundenorientierung</h3>
+            <p data-i18n="why.card1Body">Ich höre zu, berate verständlich und sorge dafür, dass jede Kundin und jeder Kunde die passende Lösung bekommt.</p>
+          </article>
+          <article class="why-card">
+            <h3 data-i18n="why.card2Title">Empathie</h3>
+            <p data-i18n="why.card2Body">Ich nehme Sorgen ernst, ohne mich von schwierigen Situationen vereinnahmen zu lassen — mit Ruhe und Verständnis.</p>
+          </article>
+          <article class="why-card">
+            <h3 data-i18n="why.card3Title">Kommunikation</h3>
+            <p data-i18n="why.card3Body">Klar, respektvoll und auf Augenhöhe — im Team, gegenüber Ärztinnen und Ärzten und im Kundengespräch.</p>
+          </article>
+          <article class="why-card">
+            <h3 data-i18n="why.card4Title">Flexibilität</h3>
+            <p data-i18n="why.card4Body">Ich passe mich an neue Teams, Warenwirtschaftssysteme und Arbeitszeiten an — von Notdienst bis Urlaubsvertretung.</p>
+          </article>
+          <article class="why-card">
+            <h3 data-i18n="why.card5Title">Teamarbeit</h3>
+            <p data-i18n="why.card5Body">Ich füge mich schnell in bestehende Abläufe ein, unterstütze das Team und entlaste die Apothekenleitung spürbar.</p>
+          </article>
+        </div>
+        <a class="button" href="kontakt.html" data-i18n="why.cta">Anfrage senden</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <p data-i18n="footer.copy">&copy; 2026 Tabarek Khazraj. Vertretungs-Apothekerin.</p>
+      </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+  </body>
+</html>
