@@ -467,6 +467,10 @@ li {
 
 /* ---------- Why-hire (Weshalb) ---------- */
 
+.why-hire {
+  text-align: center;
+}
+
 .why-hire p {
   max-width: 68ch;
   color: #4a4a5e;
@@ -474,8 +478,14 @@ li {
   line-height: 1.7;
 }
 
+.why-hire .why-grid,
+.why-hire .why-card {
+  text-align: left;
+}
+
 .why-hire .button {
-  margin-top: 0.5rem;
+  display: block;
+  margin: 1.5rem auto 0;
 }
 
 /* ---------- Contact ---------- */

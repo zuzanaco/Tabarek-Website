@@ -501,14 +501,24 @@ textarea {
   font-style: italic;
 }
 
+.why-hire {
+  text-align: center;
+}
+
 .why-hire p {
   max-width: 68ch;
   color: #3f4b42;
   margin-bottom: 1.2rem;
 }
 
+.why-hire .why-grid,
+.why-hire .why-card {
+  text-align: left;
+}
+
 .why-hire .button {
-  margin-top: 0.5rem;
+  display: block;
+  margin: 1.5rem auto 0;
 }
 
 .service-grid {
