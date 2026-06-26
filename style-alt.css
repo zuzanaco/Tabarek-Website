@@ -336,6 +336,39 @@ li {
   line-height: 1.6;
 }
 
+.why-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: 1.5rem;
+}
+
+.why-card {
+  padding: 1.5rem 1.6rem;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid rgba(139, 122, 214, 0.12);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(26, 26, 46, 0.06);
+}
+
+.why-card h3 {
+  margin: 0 0 0.5rem;
+  color: #1a1a2e;
+  font-size: 1.05rem;
+}
+
+.why-card p {
+  margin: 0;
+  color: #4a4a5e;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
 .service-card__badge {
   position: absolute;
   top: 1rem;

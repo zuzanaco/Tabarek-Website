@@ -537,6 +537,33 @@ textarea {
   color: #3f4b42;
 }
 
+.why-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: 1.5rem;
+}
+
+.why-card {
+  padding: 1.5rem 1.6rem;
+  border-radius: 16px;
+  background: #f8f4ed;
+  border: 1px solid #efe8df;
+}
+
+.why-card h3 {
+  margin: 0 0 0.5rem;
+  color: #184e47;
+  font-size: 1.05rem;
+}
+
+.why-card p {
+  margin: 0;
+  color: #3f4b42;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
 .service-card__badge {
   position: absolute;
   top: 0.9rem;
