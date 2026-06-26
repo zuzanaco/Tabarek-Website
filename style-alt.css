@@ -653,18 +653,24 @@ textarea {
 
 .form-fieldset {
   display: grid;
-  gap: 0.75rem;
-  padding: 1.2rem 1rem;
-  border: 1px solid rgba(139, 122, 214, 0.18);
-  border-radius: 16px;
-  background: #fbfaf7;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: none;
+}
+
+.form-fieldset legend {
+  margin-bottom: 0.5rem;
 }
 
 .radio-label {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  justify-content: flex-start;
+  gap: 0.5rem;
   font-weight: 500;
+  text-align: left;
 }
 
 .form-note {
