@@ -66,9 +66,6 @@
         langEn: "Englisch",
         langAr: "Arabisch",
         whyTitle: "Weshalb Ihre Apotheke bei mir in sicheren Händen ist",
-        whyP1: "Zuverlässigkeit und Verantwortung: ich habe früh als diensthabende Apothekerin gearbeitet und dabei gelernt, auch unter Belastung den Überblick zu behalten.",
-        whyP2: "Stärke in der Beratung: ich gehe respektvoll und auf Augenhöhe auf Kund*innen ein — auch wenn es einmal schwierig wird, ohne mich dabei zu vereinnahmen zu lassen.",
-        whyP3: "Schnelle Auffassungsgabe: ich arbeite mich zügig in neue Warenwirtschaftssysteme und Teams ein und bin vom ersten Tag an eine verlässliche Unterstützung.",
         whyCta: "Anfrage senden",
         workstationAlt: "Tabarek Khazraj an der HV-Tisch-Kasse"
       },
@@ -228,9 +225,6 @@
         langEn: "English",
         langAr: "Arabic",
         whyTitle: "Why your pharmacy is in safe hands with me",
-        whyP1: "Reliable and responsible: I worked as the responsible pharmacist early in my career and learned to keep oversight even under pressure.",
-        whyP2: "Strong in patient advice: I engage with customers on equal footing — even when a conversation gets difficult, without letting it get to me.",
-        whyP3: "Fast learner: I get up to speed with new ERP systems and new teams quickly and am a reliable support from day one.",
         whyCta: "Send inquiry",
         workstationAlt: "Tabarek Khazraj at the till"
       },
