@@ -18,40 +18,44 @@ Solange die Datei fehlt, wird im Bild-Slot nur die Hintergrundfarbe (in V1 creme
 
 ## Design-Umschaltung (V1 / V2)
 
-Im Header jeder Seite gibt es einen `V1 | V2`-Schalter. Damit lässt sich zwischen zwei Stylesheets umschalten:
+Im Header jeder Seite gibt es einen `V1 | V2`-Schalter. Damit lässt sich zwischen den beiden Designvarianten navigieren:
 
-- `style.css` — aktuelles Design (Vorschlag 1)
-- `style-alt.css` — alternativer Entwurf (Vorschlag 2)
+- `style.css` — V1-Design (cremefarben / grün)
+- `style-alt.css` — V2-Design (Sophia-Layout, lavendel)
 
-Die Auswahl wird in `localStorage` unter `tabarek.design` gespeichert, sodass sie Seitenwechsel und Reloads überdauert. Eine kleine "V2 PREVIEW"-Markierung unten links erscheint nur, wenn V2 aktiv ist.
+Die jeweils aktive Variante wird als deaktivierter Button dargestellt, die andere als Link zur entsprechenden `*.v2.html`-Seite.
 
-Lokales Arbeiten
-
-```bash
-# Repository initialisieren (falls noch nicht geschehen)
-git init
-git branch -M main
-git add .
-git commit -m "Initial commit: personal site"
-```
-
-Zu GitHub pushen
-
-1. Erstelle ein neues Repository auf GitHub (z. B. `vertretungsapotheker-site`).
-2. Verbinde dein lokales Repo und pushe:
+## Lokales Arbeiten
 
 ```bash
-# Ersetze <github-user>/<repo>.git durch deine URL
-git remote add origin https://github.com/<github-user>/<repo>.git
-git push -u origin main
+git clone https://github.com/zuzanaco/Tabarek-Website.git
+cd Tabarek-Website
+# Statisch serven, z. B. mit Python:
+python3 -m http.server 8000
+# Dann http://localhost:8000 im Browser öffnen
 ```
 
-Auf Render deployen (statisch)
+## Deployment auf GitHub Pages
 
-1. Erstelle ein neues "Static Site" auf https://render.com
-2. Verbinde dein GitHub-Repository mit Render.
-3. Setze `Publish directory` auf `/` und baue keine zusätzlichen Befehle (keine Build-Command nötig für reine HTML/CSS-Seite).
+Die Site wird automatisch über GitHub Actions deployt. Jeder Push auf `main` triggert den Workflow `.github/workflows/pages.yml`, der die Site auf GitHub Pages veröffentlicht.
 
-Alternativ: Wenn du das `gh` CLI nutzt, kannst du das Repo auch per `gh repo create` erstellen und direkt pushen.
+Erstmalige Einrichtung (einmalig nötig):
 
-Fragen? Schick mir gern deinen GitHub-Repo-Link und ich kann das Pushen für dich anleiten oder automatisieren.
+1. **Repository auf GitHub erstellen** (falls noch nicht geschehen) und Code pushen:
+   ```bash
+   git remote add origin https://github.com/zuzanaco/Tabarek-Website.git
+   git push -u origin main
+   ```
+
+2. **GitHub Pages in den Repo-Settings aktivieren** (einmalig):
+   - Gehe zu https://github.com/zuzanaco/Tabarek-Website/settings/pages
+   - Unter **Source** wähle **GitHub Actions** (statt "Deploy from a branch")
+   - Speichern
+
+3. **Ersten Deploy abwarten**: Der erste Lauf des `Deploy to GitHub Pages`-Workflows startet automatisch durch den Push auf `main`. Status prüfen unter https://github.com/zuzanaco/Tabarek-Website/actions
+
+Die Site ist dann erreichbar unter:
+
+**https://zuzanaco.github.io/Tabarek-Website/**
+
+Hinweis: Die Startseite `index.html` (V1) wird direkt unter `/` ausgeliefert. V2-Seiten sind unter `/index.v2.html`, `/about.v2.html` etc. erreichbar.
