@@ -41,66 +41,72 @@
       </section>
 
       <section class="container section" id="kontakt">
-        <div class="contact-layout">
-          <div class="contact-info">
-            <div class="info-card">
-              <h3 data-i18n="contact.emailTitle">E-Mail</h3>
-              <p><a href="mailto:tabarek@example.com" data-i18n="contact.emailValue">tabarek@example.com</a></p>
-            </div>
-            <div class="info-card">
-              <h3 data-i18n="contact.infoTitle">Angaben für die Anfrage</h3>
-              <p data-i18n="contact.infoBody">
-                Bitte nennen Sie Zeitraum, Standort, Dienstzeiten und besondere
-                Anforderungen.
+        <div class="contact-cards">
+          <article class="contact-card">
+            <h2 data-i18n="contact.bookTitle">Buche mich</h2>
+            <p class="contact-card__lead" data-i18n="contact.bookLead">Senden Sie eine kurze Anfrage mit Zeitraum, Ort und gewünschtem Umfang.</p>
+            <form class="contact-form" action="thankyou.v2.html" method="get">
+              <div class="form-row-split">
+                <div class="form-row">
+                  <label for="name" data-i18n="contact.formName">Name</label>
+                  <input id="name" name="name" autocomplete="name" required />
+                </div>
+                <div class="form-row">
+                  <label for="apotheke" data-i18n="contact.formPharmacy">Apotheke</label>
+                  <input id="apotheke" name="apotheke" autocomplete="organization" />
+                </div>
+              </div>
+              <div class="form-row-split">
+                <div class="form-row">
+                  <label for="email" data-i18n="contact.formEmail">E-Mail</label>
+                  <input id="email" type="email" name="email" autocomplete="email" required />
+                </div>
+                <div class="form-row">
+                  <label for="telefon" data-i18n="contact.formPhone">Telefon</label>
+                  <input id="telefon" name="telefon" autocomplete="tel" />
+                </div>
+              </div>
+              <fieldset class="form-fieldset">
+                <legend data-i18n="contact.formType">Art der Vertretung</legend>
+                <label class="radio-label">
+                  <input type="radio" name="vertretung" value="tag" checked />
+                  <span data-i18n="contact.formTypeDay">Tagesvertretung</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="vertretung" value="notdienst" />
+                  <span data-i18n="contact.formTypeEmergency">Notdienst</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="vertretung" value="mehrtaegig" />
+                  <span data-i18n="contact.formTypeMulti">Mehrtägiger Einsatz</span>
+                </label>
+              </fieldset>
+              <div class="form-row">
+                <label for="nachricht" data-i18n="contact.formMessage">Nachricht</label>
+                <textarea id="nachricht" name="nachricht" required></textarea>
+              </div>
+              <p class="form-note" data-i18n="contact.formNote">
+                Dieses statische Formular leitet aktuell auf die Danke-Seite weiter.
               </p>
-            </div>
-          </div>
+              <button class="button" type="submit" data-i18n="contact.formSubmit">Anfrage absenden</button>
+            </form>
+          </article>
 
-          <form class="contact-form" action="thankyou.v2.html" method="get">
-            <div class="form-row-split">
-              <div class="form-row">
-                <label for="name" data-i18n="contact.formName">Name</label>
-                <input id="name" name="name" autocomplete="name" required />
-              </div>
-              <div class="form-row">
-                <label for="apotheke" data-i18n="contact.formPharmacy">Apotheke</label>
-                <input id="apotheke" name="apotheke" autocomplete="organization" />
-              </div>
+          <article class="contact-card contact-card--email">
+            <h2 data-i18n="contact.emailTitle">Kontaktiere mich per E-Mail</h2>
+            <p class="contact-card__lead" data-i18n="contact.emailBody">Für andere Anfragen erreichst du mich unter:</p>
+            <div class="email-copy">
+              <a href="mailto:tabarakkhazraj@gmail.com" class="email-address">tabarakkhazraj@gmail.com</a>
+              <button type="button" class="copy-btn" id="copy-email" aria-label="E-Mail kopieren" data-i18n-attr="aria-label:contact.copyLabel">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="9" y="9" width="11" height="11" rx="2"/>
+                  <path d="M5 15V5a2 2 0 0 1 2-2h10"/>
+                </svg>
+                <span class="copy-btn__label" data-i18n="contact.copyLabel">Kopieren</span>
+              </button>
             </div>
-            <div class="form-row-split">
-              <div class="form-row">
-                <label for="email" data-i18n="contact.formEmail">E-Mail</label>
-                <input id="email" type="email" name="email" autocomplete="email" required />
-              </div>
-              <div class="form-row">
-                <label for="telefon" data-i18n="contact.formPhone">Telefon</label>
-                <input id="telefon" name="telefon" autocomplete="tel" />
-              </div>
-            </div>
-            <fieldset class="form-fieldset">
-              <legend data-i18n="contact.formType">Art der Vertretung</legend>
-              <label class="radio-label">
-                <input type="radio" name="vertretung" value="tag" checked />
-                <span data-i18n="contact.formTypeDay">Tagesvertretung</span>
-              </label>
-              <label class="radio-label">
-                <input type="radio" name="vertretung" value="notdienst" />
-                <span data-i18n="contact.formTypeEmergency">Notdienst</span>
-              </label>
-              <label class="radio-label">
-                <input type="radio" name="vertretung" value="mehrtaegig" />
-                <span data-i18n="contact.formTypeMulti">Mehrtägiger Einsatz</span>
-              </label>
-            </fieldset>
-            <div class="form-row">
-              <label for="nachricht" data-i18n="contact.formMessage">Nachricht</label>
-              <textarea id="nachricht" name="nachricht" required></textarea>
-            </div>
-            <p class="form-note" data-i18n="contact.formNote">
-              Dieses statische Formular leitet aktuell auf die Danke-Seite weiter.
-            </p>
-            <button class="button" type="submit" data-i18n="contact.formSubmit">Anfrage absenden</button>
-          </form>
+            <p class="copy-feedback" id="copy-feedback" aria-live="polite" data-i18n="contact.copied">Kopiert!</p>
+          </article>
         </div>
       </section>
     </main>

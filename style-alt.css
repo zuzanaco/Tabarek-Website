@@ -490,39 +490,122 @@ li {
 
 /* ---------- Contact ---------- */
 
-.contact-layout {
+.contact-cards {
   display: grid;
-  gap: 2rem;
-  grid-template-columns: 1fr 1.1fr;
+  gap: 1.5rem;
+  grid-template-columns: 1.4fr 1fr;
   margin-top: 1.8rem;
+  align-items: stretch;
 }
 
-.contact-info {
-  display: grid;
-  gap: 1rem;
-}
-
-.info-card {
-  padding: 1.6rem;
-  border-radius: 18px;
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 20px;
   background: #ffffff;
   border: 1px solid rgba(139, 122, 214, 0.1);
 }
 
-.info-card h3 {
-  margin-top: 0;
-  margin-bottom: 0.6rem;
+.contact-card h2 {
+  margin: 0 0 0.5rem;
   color: #1a1a2e;
-  font-size: 1.05rem;
+  font-size: 1.4rem;
+  letter-spacing: -0.01em;
+}
+
+.contact-card__lead {
+  margin: 0 0 1.25rem;
+  color: #4a4a5e;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.contact-card--email {
+  justify-content: flex-start;
+}
+
+.email-copy {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1rem;
+  border-radius: 14px;
+  background: #fbfaf7;
+  border: 1px solid rgba(139, 122, 214, 0.12);
+}
+
+.email-address {
+  flex: 1;
+  font-weight: 600;
+  color: #1a1a2e;
+  word-break: break-all;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.email-address:hover {
+  color: #8b7ad6;
+  text-decoration: none;
+}
+
+.copy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.75rem;
+  border: 0;
+  border-radius: 10px;
+  background: #8b7ad6;
+  color: #ffffff;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.15s ease;
+  flex-shrink: 0;
+}
+
+.copy-btn:hover {
+  background: #6b5ab6;
+}
+
+.copy-btn:active {
+  transform: scale(0.96);
+}
+
+.copy-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.copy-btn__label {
+  white-space: nowrap;
+}
+
+.copy-feedback {
+  margin: 0.75rem 0 0;
+  color: #6b5ab6;
+  font-size: 0.88rem;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  min-height: 1.2em;
+}
+
+.copy-feedback--show {
+  opacity: 1;
 }
 
 .contact-form {
   display: grid;
   gap: 1rem;
-  padding: 1.75rem;
-  border-radius: 20px;
-  background: #ffffff;
-  border: 1px solid rgba(139, 122, 214, 0.1);
+}
+
+.contact-card .contact-form {
+  background: transparent;
+  border: 0;
+  padding: 0;
 }
 
 .form-row {
@@ -892,7 +975,7 @@ textarea {
     height: 70%;
     min-height: 300px;
   }
-  .contact-layout {
+  .contact-cards {
     grid-template-columns: 1fr;
   }
   .service-grid {

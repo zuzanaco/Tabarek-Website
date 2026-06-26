@@ -126,10 +126,12 @@
       contact: {
         title: "Kontakt",
         intro: "Senden Sie eine kurze Anfrage mit Zeitraum, Ort und gewünschtem Umfang. Ich melde mich schnellstmöglich zurück.",
-        emailTitle: "E-Mail",
-        emailValue: "tabarek@example.com",
-        infoTitle: "Angaben für die Anfrage",
-        infoBody: "Bitte nennen Sie Zeitraum, Standort, Dienstzeiten und besondere Anforderungen.",
+        bookTitle: "Buche mich",
+        bookLead: "Senden Sie eine kurze Anfrage mit Zeitraum, Ort und gewünschtem Umfang.",
+        emailTitle: "Kontaktiere mich per E-Mail",
+        emailBody: "Für andere Anfragen erreichst du mich unter:",
+        copyLabel: "E-Mail kopieren",
+        copied: "Kopiert!",
         formName: "Name",
         formPharmacy: "Apotheke",
         formEmail: "E-Mail",
@@ -285,10 +287,12 @@
       contact: {
         title: "Contact",
         intro: "Send a short request with timeframe, location and the scope you need. I'll get back to you as soon as possible.",
-        emailTitle: "Email",
-        emailValue: "tabarek@example.com",
-        infoTitle: "Information for your request",
-        infoBody: "Please mention timeframe, location, working hours and any special requirements.",
+        bookTitle: "Book me",
+        bookLead: "Send a short request with timeframe, location and the scope you need.",
+        emailTitle: "Contact me by email",
+        emailBody: "For any other inquiries, reach me at:",
+        copyLabel: "Copy email",
+        copied: "Copied!",
         formName: "Name",
         formPharmacy: "Pharmacy",
         formEmail: "Email",
@@ -401,6 +405,39 @@
         applyLang(btn.getAttribute("data-lang"));
       });
     });
+
+    const copyBtn = document.getElementById("copy-email");
+    if (copyBtn) {
+      copyBtn.addEventListener("click", () => {
+        const emailLink = document.querySelector(".email-address");
+        const email = emailLink ? emailLink.textContent.trim() : "";
+        const feedback = document.getElementById("copy-feedback");
+        const copy = (text) => {
+          if (navigator.clipboard && window.isSecureContext) {
+            return navigator.clipboard.writeText(text);
+          }
+          return new Promise((resolve, reject) => {
+            try {
+              const ta = document.createElement("textarea");
+              ta.value = text;
+              ta.style.position = "fixed";
+              ta.style.opacity = "0";
+              document.body.appendChild(ta);
+              ta.select();
+              const ok = document.execCommand("copy");
+              document.body.removeChild(ta);
+              ok ? resolve() : reject();
+            } catch (e) { reject(e); }
+          });
+        };
+        copy(email).then(() => {
+          if (feedback) {
+            feedback.classList.add("copy-feedback--show");
+            setTimeout(() => feedback.classList.remove("copy-feedback--show"), 1800);
+          }
+        });
+      });
+    }
   }
 
   if (document.readyState === "loading") {
