@@ -71,6 +71,16 @@
                   <input id="telefon" name="telefon" autocomplete="tel" />
                 </div>
               </div>
+              <div class="form-row-split">
+                <div class="form-row">
+                  <label for="startdatum" data-i18n="contact.formDateStart">Startdatum</label>
+                  <input id="startdatum" type="date" name="startdatum" />
+                </div>
+                <div class="form-row">
+                  <label for="enddatum" data-i18n="contact.formDateEnd">Enddatum</label>
+                  <input id="enddatum" type="date" name="enddatum" />
+                </div>
+              </div>
               <fieldset class="form-fieldset">
                 <legend data-i18n="contact.formType">Art der Vertretung</legend>
                 <label class="radio-label">
@@ -90,9 +100,6 @@
                 <label for="nachricht" data-i18n="contact.formMessage">Nachricht</label>
                 <textarea id="nachricht" name="nachricht" required></textarea>
               </div>
-              <p class="form-note" data-i18n="contact.formNote">
-                Dieses statische Formular leitet aktuell auf die Danke-Seite weiter.
-              </p>
               <button class="button" type="submit" data-i18n="contact.formSubmit">Anfrage absenden</button>
             </form>
           </article>

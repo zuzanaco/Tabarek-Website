@@ -132,12 +132,13 @@
         formPharmacy: "Apotheke",
         formEmail: "E-Mail",
         formPhone: "Telefon",
+        formDateStart: "Startdatum",
+        formDateEnd: "Enddatum",
         formType: "Art der Vertretung",
         formTypeDay: "Tagesvertretung",
         formTypeEmergency: "Notdienst",
         formTypeMulti: "Mehrtägiger Einsatz",
         formMessage: "Nachricht",
-        formNote: "Dieses statische Formular leitet aktuell auf die Danke-Seite weiter.",
         formSubmit: "Anfrage absenden"
       },
       thankyou: {
@@ -291,12 +292,13 @@
         formPharmacy: "Pharmacy",
         formEmail: "Email",
         formPhone: "Phone",
+        formDateStart: "Start date",
+        formDateEnd: "End date",
         formType: "Type of cover",
         formTypeDay: "Day cover",
         formTypeEmergency: "Emergency service",
         formTypeMulti: "Multi-day assignment",
         formMessage: "Message",
-        formNote: "This static form currently redirects to the thank-you page.",
         formSubmit: "Submit inquiry"
       },
       thankyou: {
