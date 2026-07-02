@@ -1,11 +1,11 @@
 # Vertretungs-Apothekerin — Tabarek Khazraj
 
-Diese statische Website präsentiert die Leistungen von Tabarek Khazraj (Vertretungs-Apothekerin). Sie besteht aus mehreren Seiten in zwei Designvarianten:
+Diese statische Website präsentiert die Leistungen von Tabarek Khazraj (Vertretungs-Apothekerin). Die aktive Site nutzt V1:
 
 - **V1** (Standard): `index.html`, `about.html`, `leistungen.html`, `kontakt.html`, `thankyou.html`
-- **V2** (Sophia-Layout): `index.v2.html`, `about.v2.html`, `leistungen.v2.html`, `kontakt.v2.html`, `thankyou.v2.html`
+- **V2** (Sophia-Layout, ungenutzt/geparkt): `index.v2.html`, `about.v2.html`, `leistungen.v2.html`, `kontakt.v2.html`, `thankyou.v2.html`
 
-Die V1/V2-Umschaltung in der Navigation ist eine echte Seiten-Navigation, kein reiner Stylesheet-Swap — beide Varianten haben eigene HTML-Strukturen und können sich unabhängig voneinander weiterentwickeln. Die Sprachauswahl (DE/EN) wird in `localStorage` gespeichert und gilt versionsübergreifend.
+V2 bleibt bewusst im Code erhalten, ist aber nicht mehr von der aktiven V1-Site verlinkt oder verwendet. Die Sprachauswahl (DE/EN) wird in `localStorage` gespeichert.
 
 ## Bilder
 
@@ -16,14 +16,13 @@ Profilbilder liegen unter `images/`. Aktuell wird erwartet:
 
 Solange die Datei fehlt, wird im Bild-Slot nur die Hintergrundfarbe (in V1 cremefarben, in V2 hellviolett) angezeigt. Drop-in der Datei genügt, das HTML referenziert sie bereits.
 
-## Design-Umschaltung (V1 / V2)
+## V2-Archiv
 
-Im Header jeder Seite gibt es einen `V1 | V2`-Schalter. Damit lässt sich zwischen den beiden Designvarianten navigieren:
+V2 ist aktuell ungenutzt und nur als geparkte Alternative im Repository behalten. Die V1-Seiten enthalten keinen V1/V2-Schalter mehr.
 
 - `style.css` — V1-Design (cremefarben / grün)
-- `style-alt.css` — V2-Design (Sophia-Layout, lavendel)
-
-Die jeweils aktive Variante wird als deaktivierter Button dargestellt, die andere als Link zur entsprechenden `*.v2.html`-Seite.
+- `style-alt.css` — V2-Design (Sophia-Layout, lavendel, ungenutzt)
+- `*.v2.html` — V2-Seiten (ungenutzt, nur bei direktem Aufruf erreichbar)
 
 ## Lokales Arbeiten
 
@@ -58,4 +57,4 @@ Die Site ist dann erreichbar unter:
 
 **https://zuzanaco.github.io/Tabarek-Website/**
 
-Hinweis: Die Startseite `index.html` (V1) wird direkt unter `/` ausgeliefert. V2-Seiten sind unter `/index.v2.html`, `/about.v2.html` etc. erreichbar.
+Hinweis: Die Startseite `index.html` (V1) wird direkt unter `/` ausgeliefert. V2-Seiten bleiben im Code, sind aber nicht Teil der aktiven Navigation.
