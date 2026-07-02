@@ -69,7 +69,7 @@ a:hover {
     "stats";
   gap: 2.5rem;
   align-items: center;
-  padding-left: 360px;
+  padding-left: 460px;
 }
 
 .hero-copy {
@@ -437,26 +437,6 @@ textarea {
   justify-content: center;
   text-align: center;
   color: #3f4b42;
-}
-
-@media (max-width: 900px) {
-  .contact-cards {
-    grid-template-columns: 1fr;
-  }
-  .hero {
-    min-height: 0;
-  }
-  .image-slot--hero {
-    position: relative;
-    width: 100%;
-    max-width: 320px;
-    height: 380px;
-    margin: 0 auto 2rem;
-    border-radius: 50%;
-  }
-  .hero-content {
-    padding-left: 0;
-  }
 }
 
 @media (max-width: 640px) {
@@ -833,6 +813,29 @@ textarea {
   box-shadow: none;
   overflow: hidden;
   z-index: 0;
+}
+
+@media (max-width: 1020px) {
+  .contact-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: 0;
+  }
+
+  .image-slot--hero {
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    height: 380px;
+    margin: 0 auto 2rem;
+    border-radius: 50%;
+  }
+
+  .hero-content {
+    padding-left: 0;
+  }
 }
 
 .image-slot--workstation {
