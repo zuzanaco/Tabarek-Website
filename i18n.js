@@ -148,7 +148,9 @@
         backLink: "Startseite"
       },
       footer: {
-        copy: "© 2026 Tabarek Khazraj. Vertretungs-Apothekerin."
+        copy: "© 2026 Tabarek Khazraj. Vertretungs-Apothekerin.",
+        impressum: "Impressum",
+        privacy: "Datenschutz"
       },
       counters: {
         label: "Kennzahlen",
@@ -306,7 +308,9 @@
         backLink: "Home"
       },
       footer: {
-        copy: "© 2026 Tabarek Khazraj. Locum Pharmacist."
+        copy: "© 2026 Tabarek Khazraj. Locum Pharmacist.",
+        impressum: "Legal notice",
+        privacy: "Privacy policy"
       },
       counters: {
         label: "Key figures",
