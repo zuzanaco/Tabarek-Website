@@ -89,6 +89,8 @@
         card4Body: "Ich passe mich an neue Teams, Warenwirtschaftssysteme und Arbeitszeiten an — von Notdienst bis Urlaubsvertretung.",
         card5Title: "Teamarbeit",
         card5Body: "Ich füge mich schnell in bestehende Abläufe ein, unterstütze das Team und entlaste die Apothekenleitung spürbar.",
+        card6Title: "Fachliche Sicherheit",
+        card6Body: "Fundierte Ausbildung, breite Berufserfahrung und professionelles Auftreten sorgen für verlässliche Entscheidungen im Apothekenalltag.",
         cta: "Anfrage senden"
       },
       services: {
@@ -245,6 +247,8 @@
         card4Body: "I adapt to new teams, ERP systems and working hours — from emergency services to holiday cover.",
         card5Title: "Teamwork",
         card5Body: "I integrate quickly into existing workflows, support the team and noticeably relieve the pharmacy management.",
+        card6Title: "Professional confidence",
+        card6Body: "Solid education, broad professional experience and a professional manner support reliable decisions in everyday pharmacy work.",
         cta: "Send inquiry"
       },
       services: {

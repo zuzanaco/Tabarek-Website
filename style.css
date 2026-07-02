@@ -644,6 +644,10 @@ textarea {
 }
 
 .software-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 4.25rem;
   padding: 1rem 1.1rem;
   border-radius: 14px;
   background: #f8f4ed;
@@ -923,31 +927,25 @@ textarea {
   padding: 0;
   margin: 1.5rem 0 0;
   display: grid;
-  gap: 0.5rem;
-  max-width: 360px;
+  gap: 0.8rem;
+  width: 100%;
 }
 
 .language-list li {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0.6rem 1rem;
-  border-radius: 12px;
+  justify-content: center;
+  min-height: 4rem;
+  padding: 0.85rem 1.25rem;
+  border-radius: 16px;
   background: #f8f4ed;
   border: 1px solid #efe8df;
-  font-weight: 600;
+  font-weight: 800;
   color: #184e47;
   margin: 0;
-  font-size: 0.92rem;
-}
-
-.language-list li::after {
-  content: "";
-  display: block;
-  width: calc(60px * var(--level, 100) / 100);
-  height: 5px;
-  border-radius: 999px;
-  background: #b96f2a;
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
+  text-align: center;
 }
 
 @media (max-width: 760px) {
