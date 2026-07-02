@@ -35,11 +35,6 @@
         lead: "Zuverlässige pharmazeutische Vertretung für Apotheken, Notdienste und kurzfristige Personalengpässe.",
         ctaPrimary: "Kontaktiere mich",
         ctaSecondary: "Direkt per E-Mail",
-        stat1Title: "Flexibel",
-        stat1Sub: "Einsatz nach Absprache",
-        stat2Title: "Vor Ort",
-        stat2Sub: "Apothekenvertretung in Ihrer Region",
-        cardAria: "Kurzprofil",
         portraitAlt: "Porträt von Tabarek Khazraj"
       },
       about: {
@@ -196,11 +191,6 @@
         lead: "Reliable pharmaceutical cover for pharmacies, emergency services and short-notice staffing gaps.",
         ctaPrimary: "Contact me",
         ctaSecondary: "Email directly",
-        stat1Title: "Flexible",
-        stat1Sub: "Assignments by arrangement",
-        stat2Title: "On-site",
-        stat2Sub: "Pharmacy cover in your region",
-        cardAria: "Short profile",
         portraitAlt: "Portrait of Tabarek Khazraj"
       },
       about: {
