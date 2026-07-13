@@ -2,6 +2,21 @@
   const SUPPORTED = ["de", "en"];
   const STORAGE_KEY = "tabarek.lang";
   const DEFAULT_LANG = "de";
+  const SOFTWARE_SKILLS = [
+    { name: "IXOS", cv: true },
+    { name: "Infopharm" },
+    { name: "Cida" },
+    { name: "ADG", cv: true },
+    { name: "Dr. Lennartz Laborprogramm", lines: ["Dr. Lennartz", "Labor", "programm"] },
+    { name: "ScanAdhoc" },
+    { name: "PROKAS", cv: true },
+    { name: "BtM Sys" },
+    { name: "Pharmatechnik", lines: ["Pharma", "technik"] },
+    { name: "Lauer-Fischer", cv: true, lines: ["Lauer-", "Fischer"] },
+    { name: "Aposoft" },
+    { name: "apotheke online", lines: ["apotheke", "online"] },
+    { name: "pharma4you" }
+  ];
 
   const translations = {
     de: {
@@ -17,7 +32,7 @@
         descContact: "Kontakt zu Tabarek Khazraj — Anfrage für eine Apothekenvertretung senden."
       },
       nav: {
-        home: "Start",
+        home: "Home",
         about: "Über mich",
         services: "Leistungen",
         contact: "Kontakt",
@@ -39,7 +54,7 @@
       },
       about: {
         title: "Pharmazeutische Unterstützung, wenn sie gebraucht wird",
-        intro: "Ich übernehme Vertretungen im Apothekenalltag, unterstütze Teams bei planbaren Abwesenheiten und helfe bei kurzfristigen Engpässen.",
+        intro: "Seit April 2023 vertrete ich öffentliche Apotheken in Berlin und bundesweit - mit schneller Einarbeitung in Teams, Abläufe und Warenwirtschaftssysteme.",
         card1Title: "Tagesgeschäft",
         card1Body: "Handverkauf, Beratung, Rezeptprüfung und pharmazeutische Betreuung.",
         card2Title: "Notdienst",
@@ -50,11 +65,11 @@
       aboutpage: {
         title: "Über mich",
         steckbriefTitle: "Steckbrief",
-        steckbriefP1: "Nach meinem Pharmaziestudium habe ich rund zehn Jahre Berufserfahrung in Krankenhaus- und Offizin-Apotheken gesammelt. Seit 2022 arbeite ich in Apotheken in Deutschland; seit rund eineinhalb Jahren bin ich freiberuflich als Vertretungsapothekerin tätig.",
-        steckbriefP2: "Meine Schwerpunkte liegen in der Rezeptabgabe, Patientenberatung, Arzneimittelsicherheit, Medikationsanalyse, professionellen Kundenbetreuung sowie in der Unterstützung bei Lager und Arbeitsabläufen. Ich bin es gewohnt, Apothekenteams im anspruchsvollen Tagesgeschäft zu entlasten, mich schnell in neue Abläufe einzuarbeiten und Team wie Kundschaft zuverlässig und ruhig zu unterstützen. Zusätzlich verfüge ich über Fachkenntnisse in Impfleistungen sowie in der Abgabe, Prüfung und Dokumentation von Medizinalcannabis.",
-        steckbriefP3: "Ich verfüge über eine Qualifikation in [Zertifikat / Qualifikation Platzhalter]; eine weitere Zertifizierung in [Zertifikat Platzhalter] befindet sich aktuell in Vorbereitung.",
-        steckbriefP4: "In meiner Arbeit sind mir professionelle Teamarbeit und eine sehr gute Kundenbetreuung gleichermaßen wichtig. Eine gut geführte Apotheke lebt für mich davon, das Team zu entlasten und Kundinnen und Kunden aufmerksam, verständlich und verlässlich zu beraten.",
-        steckbriefP5: "Mein langfristiges Ziel ist es, eine eigene Apotheke zu besitzen und zu führen. Das motiviert mich, meine Beratungs-, Führungs- und Organisationskompetenz kontinuierlich weiterzuentwickeln.",
+        steckbriefP1: "Ich bin approbierte Apothekerin und seit April 2023 als selbstständige Vertretungsapothekerin in Berlin und bundesweit tätig. In dieser Zeit habe ich mehr als 30 öffentliche Apotheken vertreten und mich schnell in unterschiedliche Teams, Arbeitsabläufe und EDV-Systeme eingearbeitet.",
+        steckbriefP2: "Meine Berufserfahrung verbindet den deutschen Apothekenalltag mit klinischer Pharmazie: Vor meiner Approbation in Berlin 2023 habe ich in öffentlichen Apotheken in Deutschland gearbeitet und von 2018 bis 2021 klinische Einsätze in Onkologie, Innerer Medizin, Endokrinologie und COVID-19-Stationen absolviert.",
+        steckbriefP3: "Die Approbation als Apothekerin habe ich 2023 in Berlin erhalten. Ich bin Mitglied der Apothekerkammer Berlin und habe Pharmazie in einem fünfjährigen Universitätsstudium an der Universität Babylon studiert.",
+        steckbriefP4: "Im Apothekenalltag arbeite ich selbstständig, flexibel und verantwortungsbewusst. Ich unterstütze Teams ruhig und strukturiert, kommuniziere klar mit Kundschaft, Ärztinnen, Ärzten und medizinischem Fachpersonal und entlaste die Apotheke dort, wo gerade Unterstützung gebraucht wird.",
+        steckbriefP5: "Durch die Verbindung aus klinischer und öffentlicher Apothekenerfahrung bringe ich einen breiten pharmazeutischen Hintergrund in Vertretungseinsätze ein.",
         languagesTitle: "Sprachkenntnisse",
         languagesIntro: "Sprachen, in denen ich Kund*innen, Ärzt*innen und Teams sicher beraten kann.",
         langDe: "Deutsch",
@@ -62,7 +77,7 @@
         langAr: "Arabisch",
         whyTitle: "Warum Ihre Apotheke bei mir in sicheren Händen ist",
         whyCta: "Anfrage senden",
-        workstationAlt: "Tabarek Khazraj am HV-Tisch"
+        workstationAlt: "Tabarek Khazraj zeigt auf etwas"
       },
       reviews: {
         title: "Bewertungen",
@@ -156,7 +171,7 @@
         label: "Kennzahlen",
         experienceValue: "10+",
         experienceLabel: "Jahre Berufserfahrung",
-        pharmaciesValue: "20+",
+        pharmaciesValue: "30+",
         pharmaciesLabel: "Apotheken vertreten",
         emergencyValue: "100+",
         emergencyLabel: "Notdienste",
@@ -199,7 +214,7 @@
       },
       about: {
         title: "Pharmaceutical support when you need it",
-        intro: "I step in for day-to-day pharmacy operations, support teams during planned absences, and help with short-notice gaps.",
+        intro: "Since April 2023, I have covered public pharmacies in Berlin and across Germany, adapting quickly to new teams, workflows and pharmacy software.",
         card1Title: "Day-to-day",
         card1Body: "OTC sales, customer advice, prescription checks and pharmaceutical care.",
         card2Title: "Emergency service",
@@ -210,11 +225,11 @@
       aboutpage: {
         title: "About me",
         steckbriefTitle: "Profile",
-        steckbriefP1: "After completing my pharmacy studies, I gained around 10 years of professional experience across hospital and community pharmacy settings. Since 2022, I have been working in pharmacies in Germany, and for the past 1.5 years I have been fully active as a freelance locum pharmacist.",
-        steckbriefP2: "My areas of expertise include prescription dispensing, patient counselling, medication safety, stock and workflow support, medication analysis, and professional customer care. I also have experience supporting pharmacy teams in busy day-to-day operations, adapting quickly to new environments, and maintaining a calm, reliable service for both staff and customers. In addition, I have specialist knowledge in vaccination services and medical cannabis dispensing and measurement.",
-        steckbriefP3: "I hold a qualification in [Certificate / Qualification Placeholder], with further certification in [Certificate Placeholder] currently in progress.",
-        steckbriefP4: "In my work, I value both professional teamwork and excellent customer care. I believe a well-run pharmacy depends on respecting the staff while also making sure customers feel listened to, advised, and supported.",
-        steckbriefP5: "My long-term goal is to own and lead a pharmacy of my own. This motivates me to continuously develop my advisory, leadership, and organisational skills.",
+        steckbriefP1: "I am a licensed pharmacist and have worked as an independent locum pharmacist in Berlin and across Germany since April 2023. In that role, I have covered more than 30 public pharmacies and adapted quickly to different teams, workflows and software systems.",
+        steckbriefP2: "My experience combines German community pharmacy practice with clinical pharmacy: before receiving my Berlin pharmacist license in 2023, I worked in public pharmacies in Germany and completed clinical rotations from 2018 to 2021 in oncology, internal medicine, endocrinology and COVID-19 wards.",
+        steckbriefP3: "I received my pharmacist license in Berlin in 2023. I am a member of the Berlin Chamber of Pharmacists and completed a five-year university pharmacy degree at the University of Babylon.",
+        steckbriefP4: "In day-to-day pharmacy work, I am independent, flexible and responsible. I support teams calmly and systematically, communicate clearly with customers, prescribers and medical staff, and relieve the pharmacy wherever support is needed.",
+        steckbriefP5: "By combining clinical and community pharmacy experience, I bring a broad pharmaceutical background to locum assignments.",
         languagesTitle: "Languages",
         languagesIntro: "Languages I can use confidently with customers, prescribers and teams.",
         langDe: "German",
@@ -222,7 +237,7 @@
         langAr: "Arabic",
         whyTitle: "Why your pharmacy is in safe hands with me",
         whyCta: "Send inquiry",
-        workstationAlt: "Tabarek Khazraj at the till"
+        workstationAlt: "Tabarek Khazraj pointing"
       },
       reviews: {
         title: "Reviews",
@@ -316,7 +331,7 @@
         label: "Key figures",
         experienceValue: "10+",
         experienceLabel: "Years of experience",
-        pharmaciesValue: "20+",
+        pharmaciesValue: "30+",
         pharmaciesLabel: "Pharmacies covered",
         emergencyValue: "100+",
         emergencyLabel: "Emergency services",
@@ -393,16 +408,132 @@
     } catch (e) {}
   }
 
+  function renderSoftwareSkills() {
+    document.querySelectorAll("[data-software-list]").forEach((list) => {
+      list.textContent = "";
+      const lines = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      lines.classList.add("software-lines");
+      lines.setAttribute("aria-hidden", "true");
+      list.appendChild(lines);
+      SOFTWARE_SKILLS.forEach((skill) => {
+        const item = document.createElement("li");
+        item.className = skill.cv ? "software-card software-card--cv" : "software-card";
+        item.setAttribute("aria-label", skill.name);
+        if (skill.lines) {
+          skill.lines.forEach((line) => {
+            const span = document.createElement("span");
+            span.textContent = line;
+            item.appendChild(span);
+          });
+        } else {
+          item.textContent = skill.name;
+        }
+        list.appendChild(item);
+      });
+    });
+    scheduleSoftwareConnectorUpdate();
+  }
+
+  function scheduleSoftwareConnectorUpdate() {
+    requestAnimationFrame(updateSoftwareConnectors);
+  }
+
+  function updateSoftwareConnectors() {
+    document.querySelectorAll("[data-software-list]").forEach((list) => {
+      const svg = list.querySelector(".software-lines");
+      const cards = Array.from(list.querySelectorAll(".software-card"));
+      if (!svg || cards.length === 0) return;
+
+      const listRect = list.getBoundingClientRect();
+      const styles = getComputedStyle(list);
+      const centerYValue = styles.getPropertyValue("--software-center-y").trim();
+      const centerX = listRect.width / 2;
+      const centerY = centerYValue.endsWith("%")
+        ? listRect.height * (parseFloat(centerYValue) / 100)
+        : parseFloat(centerYValue) || listRect.height / 2;
+      const centerRadius = parseFloat(getComputedStyle(list, "::after").width) / 2 || 38;
+
+      svg.setAttribute("viewBox", `0 0 ${listRect.width} ${listRect.height}`);
+      svg.setAttribute("width", listRect.width);
+      svg.setAttribute("height", listRect.height);
+      svg.replaceChildren();
+
+      cards.forEach((card) => {
+        const rect = card.getBoundingClientRect();
+        const cardX = rect.left - listRect.left + rect.width / 2;
+        const cardY = rect.top - listRect.top + rect.height / 2;
+        const dx = cardX - centerX;
+        const dy = cardY - centerY;
+        const distance = Math.hypot(dx, dy);
+        if (distance <= 1) return;
+
+        const ux = dx / distance;
+        const uy = dy / distance;
+        const cardRadius = Math.min(rect.width, rect.height) / 2;
+        const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+        line.setAttribute("x1", centerX + ux * centerRadius);
+        line.setAttribute("y1", centerY + uy * centerRadius);
+        line.setAttribute("x2", cardX - ux * cardRadius);
+        line.setAttribute("y2", cardY - uy * cardRadius);
+        svg.appendChild(line);
+      });
+    });
+  }
+
+  function initSectionAnimations() {
+    if (document.body.dataset.page === "Contact") return;
+
+    const sections = Array.from(document.querySelectorAll(".hero, body > .counters, main > section"));
+    if (sections.length === 0) return;
+
+    sections.forEach((section, index) => {
+      section.classList.add("section-reveal");
+      section.style.setProperty("--reveal-delay", `${Math.min(index * 90, 540)}ms`);
+    });
+
+    const reveal = (section) => {
+      section.classList.add("section-reveal--visible");
+    };
+
+    if (!("IntersectionObserver" in window)) {
+      sections.forEach(reveal);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            reveal(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.18, rootMargin: "0px 0px -8% 0px" }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+  }
+
   function init() {
     const stored = getStoredLang();
     const lang = stored || detectBrowserLang();
+    renderSoftwareSkills();
     applyLang(lang);
+    initSectionAnimations();
 
     document.querySelectorAll(".lang-switch [data-lang]").forEach((btn) => {
       btn.addEventListener("click", () => {
         applyLang(btn.getAttribute("data-lang"));
       });
     });
+
+    window.addEventListener("resize", scheduleSoftwareConnectorUpdate);
+    window.addEventListener("load", scheduleSoftwareConnectorUpdate, { once: true });
+    if ("ResizeObserver" in window) {
+      const observer = new ResizeObserver(scheduleSoftwareConnectorUpdate);
+      document.querySelectorAll("[data-software-list]").forEach((list) => observer.observe(list));
+    }
 
     const copyBtn = document.getElementById("copy-email");
     if (copyBtn) {
