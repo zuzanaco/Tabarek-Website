@@ -2,6 +2,21 @@
   const SUPPORTED = ["de", "en"];
   const STORAGE_KEY = "tabarek.lang";
   const DEFAULT_LANG = "de";
+  const SOFTWARE_SKILLS = [
+    { name: "IXOS", cv: true },
+    { name: "Infopharm" },
+    { name: "Cida" },
+    { name: "ADG", cv: true },
+    { name: "Dr. Lennartz Laborprogramm", lines: ["Dr. Lennartz", "Labor", "programm"] },
+    { name: "ScanAdhoc" },
+    { name: "PROKAS", cv: true },
+    { name: "BtM Sys" },
+    { name: "Pharmatechnik", lines: ["Pharma", "technik"] },
+    { name: "Lauer-Fischer", cv: true, lines: ["Lauer-", "Fischer"] },
+    { name: "Aposoft" },
+    { name: "apotheke online", lines: ["apotheke", "online"] },
+    { name: "pharma4you" }
+  ];
 
   const translations = {
     de: {
@@ -17,7 +32,7 @@
         descContact: "Kontakt zu Tabarek Khazraj — Anfrage für eine Apothekenvertretung senden."
       },
       nav: {
-        home: "Start",
+        home: "Home",
         about: "Über mich",
         services: "Leistungen",
         contact: "Kontakt",
@@ -62,7 +77,7 @@
         langAr: "Arabisch",
         whyTitle: "Warum Ihre Apotheke bei mir in sicheren Händen ist",
         whyCta: "Anfrage senden",
-        workstationAlt: "Tabarek Khazraj am HV-Tisch"
+        workstationAlt: "Tabarek Khazraj zeigt auf etwas"
       },
       reviews: {
         title: "Bewertungen",
@@ -222,7 +237,7 @@
         langAr: "Arabic",
         whyTitle: "Why your pharmacy is in safe hands with me",
         whyCta: "Send inquiry",
-        workstationAlt: "Tabarek Khazraj at the till"
+        workstationAlt: "Tabarek Khazraj pointing"
       },
       reviews: {
         title: "Reviews",
@@ -393,9 +408,82 @@
     } catch (e) {}
   }
 
+  function renderSoftwareSkills() {
+    document.querySelectorAll("[data-software-list]").forEach((list) => {
+      list.textContent = "";
+      const lines = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      lines.classList.add("software-lines");
+      lines.setAttribute("aria-hidden", "true");
+      list.appendChild(lines);
+      SOFTWARE_SKILLS.forEach((skill) => {
+        const item = document.createElement("li");
+        item.className = skill.cv ? "software-card software-card--cv" : "software-card";
+        item.setAttribute("aria-label", skill.name);
+        if (skill.lines) {
+          skill.lines.forEach((line) => {
+            const span = document.createElement("span");
+            span.textContent = line;
+            item.appendChild(span);
+          });
+        } else {
+          item.textContent = skill.name;
+        }
+        list.appendChild(item);
+      });
+    });
+    scheduleSoftwareConnectorUpdate();
+  }
+
+  function scheduleSoftwareConnectorUpdate() {
+    requestAnimationFrame(updateSoftwareConnectors);
+  }
+
+  function updateSoftwareConnectors() {
+    document.querySelectorAll("[data-software-list]").forEach((list) => {
+      const svg = list.querySelector(".software-lines");
+      const cards = Array.from(list.querySelectorAll(".software-card"));
+      if (!svg || cards.length === 0) return;
+
+      const listRect = list.getBoundingClientRect();
+      const styles = getComputedStyle(list);
+      const centerYValue = styles.getPropertyValue("--software-center-y").trim();
+      const centerX = listRect.width / 2;
+      const centerY = centerYValue.endsWith("%")
+        ? listRect.height * (parseFloat(centerYValue) / 100)
+        : parseFloat(centerYValue) || listRect.height / 2;
+      const centerRadius = parseFloat(getComputedStyle(list, "::after").width) / 2 || 38;
+
+      svg.setAttribute("viewBox", `0 0 ${listRect.width} ${listRect.height}`);
+      svg.setAttribute("width", listRect.width);
+      svg.setAttribute("height", listRect.height);
+      svg.replaceChildren();
+
+      cards.forEach((card) => {
+        const rect = card.getBoundingClientRect();
+        const cardX = rect.left - listRect.left + rect.width / 2;
+        const cardY = rect.top - listRect.top + rect.height / 2;
+        const dx = cardX - centerX;
+        const dy = cardY - centerY;
+        const distance = Math.hypot(dx, dy);
+        if (distance <= 1) return;
+
+        const ux = dx / distance;
+        const uy = dy / distance;
+        const cardRadius = Math.min(rect.width, rect.height) / 2;
+        const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+        line.setAttribute("x1", centerX + ux * centerRadius);
+        line.setAttribute("y1", centerY + uy * centerRadius);
+        line.setAttribute("x2", cardX - ux * cardRadius);
+        line.setAttribute("y2", cardY - uy * cardRadius);
+        svg.appendChild(line);
+      });
+    });
+  }
+
   function init() {
     const stored = getStoredLang();
     const lang = stored || detectBrowserLang();
+    renderSoftwareSkills();
     applyLang(lang);
 
     document.querySelectorAll(".lang-switch [data-lang]").forEach((btn) => {
@@ -403,6 +491,13 @@
         applyLang(btn.getAttribute("data-lang"));
       });
     });
+
+    window.addEventListener("resize", scheduleSoftwareConnectorUpdate);
+    window.addEventListener("load", scheduleSoftwareConnectorUpdate, { once: true });
+    if ("ResizeObserver" in window) {
+      const observer = new ResizeObserver(scheduleSoftwareConnectorUpdate);
+      document.querySelectorAll("[data-software-list]").forEach((list) => observer.observe(list));
+    }
 
     const copyBtn = document.getElementById("copy-email");
     if (copyBtn) {
