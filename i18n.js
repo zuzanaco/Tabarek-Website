@@ -480,11 +480,47 @@
     });
   }
 
+  function initSectionAnimations() {
+    if (document.body.dataset.page === "Contact") return;
+
+    const sections = Array.from(document.querySelectorAll(".hero, body > .counters, main > section"));
+    if (sections.length === 0) return;
+
+    sections.forEach((section, index) => {
+      section.classList.add("section-reveal");
+      section.style.setProperty("--reveal-delay", `${Math.min(index * 90, 540)}ms`);
+    });
+
+    const reveal = (section) => {
+      section.classList.add("section-reveal--visible");
+    };
+
+    if (!("IntersectionObserver" in window)) {
+      sections.forEach(reveal);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            reveal(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.18, rootMargin: "0px 0px -8% 0px" }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+  }
+
   function init() {
     const stored = getStoredLang();
     const lang = stored || detectBrowserLang();
     renderSoftwareSkills();
     applyLang(lang);
+    initSectionAnimations();
 
     document.querySelectorAll(".lang-switch [data-lang]").forEach((btn) => {
       btn.addEventListener("click", () => {
