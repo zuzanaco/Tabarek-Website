@@ -408,6 +408,14 @@ li {
   font-weight: 600;
 }
 
+.software-card--cv {
+  padding: 1.3rem 1.35rem;
+  background: linear-gradient(145deg, #fff1f4, #f8c4cf);
+  border-color: rgba(223, 117, 132, 0.35);
+  color: #9f3d55;
+  box-shadow: 0 14px 30px rgba(159, 61, 85, 0.14);
+}
+
 /* ---------- Testimonials ---------- */
 
 .testimonials-grid {

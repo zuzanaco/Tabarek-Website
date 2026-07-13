@@ -779,7 +779,7 @@ textarea {
   margin: 2.5rem auto 0;
   position: relative;
   width: min(760px, 100%);
-  min-height: 620px;
+  min-height: 800px;
   isolation: isolate;
 }
 
@@ -816,14 +816,14 @@ textarea {
 
 .software-card {
   --angle: 0deg;
-  --radius: 240px;
+  --radius: 254px;
   position: absolute;
   left: 50%;
   top: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: clamp(7.4rem, 16vw, 10.2rem);
+  width: clamp(6.9rem, 10vw, 7.8rem);
   min-height: 4.7rem;
   padding: 0.85rem 1rem;
   border-radius: 999px;
@@ -838,6 +838,21 @@ textarea {
   box-shadow: 0 14px 36px rgba(20, 87, 92, 0.12), inset 0 0 0 1px rgba(56, 184, 177, 0.12);
   transform: translate(-50%, -50%) rotate(var(--angle)) translate(var(--radius)) rotate(calc(var(--angle) * -1));
   z-index: 2;
+}
+
+.software-card--cv {
+  --radius: 330px;
+  width: clamp(8.7rem, 18vw, 11.4rem);
+  min-height: 5.25rem;
+  background: linear-gradient(145deg, rgba(255, 241, 244, 0.96), rgba(248, 196, 207, 0.92));
+  border-color: rgba(223, 117, 132, 0.42);
+  color: #9f3d55;
+  box-shadow:
+    0 18px 42px rgba(159, 61, 85, 0.18),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.72);
+  font-size: 0.94rem;
+  font-weight: 700;
+  z-index: 3;
 }
 
 .software-card::before {
@@ -855,57 +870,63 @@ textarea {
 
 .software-card:nth-child(1) {
   --angle: -90deg;
-  --radius: 245px;
 }
 
 .software-card:nth-child(2) {
-  --angle: -57deg;
-  --radius: 250px;
+  --angle: -55deg;
+  --radius: 258px;
 }
 
 .software-card:nth-child(3) {
-  --angle: -24deg;
-  --radius: 255px;
+  --angle: -25deg;
+  --radius: 252px;
 }
 
 .software-card:nth-child(4) {
-  --angle: 9deg;
-  --radius: 252px;
+  --angle: 5deg;
 }
 
 .software-card:nth-child(5) {
-  --angle: 42deg;
-  --radius: 258px;
+  --angle: 40deg;
+  --radius: 256px;
 }
 
 .software-card:nth-child(6) {
-  --angle: 78deg;
-  --radius: 260px;
-}
-
-.software-card:nth-child(7) {
-  --angle: 112deg;
-  --radius: 262px;
-}
-
-.software-card:nth-child(8) {
-  --angle: 141deg;
+  --angle: 75deg;
   --radius: 248px;
 }
 
-.software-card:nth-child(9) {
-  --angle: 174deg;
-  --radius: 252px;
+.software-card:nth-child(7) {
+  --angle: 90deg;
 }
 
-.software-card:nth-child(10) {
-  --angle: 207deg;
+.software-card:nth-child(8) {
+  --angle: 125deg;
   --radius: 258px;
 }
 
+.software-card:nth-child(9) {
+  --angle: 155deg;
+  --radius: 250px;
+}
+
+.software-card:nth-child(10) {
+  --angle: 180deg;
+}
+
 .software-card:nth-child(11) {
-  --angle: 240deg;
-  --radius: 245px;
+  --angle: 210deg;
+  --radius: 260px;
+}
+
+.software-card:nth-child(12) {
+  --angle: 245deg;
+  --radius: 248px;
+}
+
+.software-card:nth-child(13) {
+  --angle: 280deg;
+  --radius: 254px;
 }
 
 @media (max-width: 760px) {
@@ -961,7 +982,7 @@ textarea {
     gap: 5px;
     border: 1px solid var(--border);
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.72);
+    background: #ffffff;
     cursor: pointer;
   }
 
@@ -1000,12 +1021,10 @@ textarea {
     z-index: 20;
     gap: 0.9rem;
     padding: 1rem;
-    border: 1px solid var(--border);
+    border: 1px solid rgba(165, 203, 203, 0.95);
     border-radius: 16px;
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 18px 36px rgba(36, 50, 58, 0.14);
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
+    background: #ffffff;
+    box-shadow: 0 20px 42px rgba(36, 50, 58, 0.2);
   }
 
   .top-nav__toggle:checked ~ .top-nav__menu-panel {
