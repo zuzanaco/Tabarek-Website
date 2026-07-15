@@ -1253,7 +1253,11 @@ body[data-page="About"] main {
   overflow: hidden;
   isolation: isolate;
   background: rgba(255, 255, 255, 0.48);
-  padding: 2.75rem;
+  padding: 2rem 2.25rem 1.25rem;
+}
+
+#software-skills h2 {
+  margin-bottom: 0;
 }
 
 #software-skills::before {
@@ -1289,10 +1293,10 @@ body[data-page="About"] main {
   --software-center-y: 50%;
   list-style: none;
   padding: 0;
-  margin: 1rem auto 0;
+  margin: -0.5rem auto -0.5rem;
   position: relative;
-  width: min(980px, 100%);
-  min-height: 560px;
+  width: min(700px, 100%);
+  aspect-ratio: 1;
   isolation: isolate;
 }
 
@@ -1333,7 +1337,7 @@ body[data-page="About"] main {
 }
 
 .software-card {
-  --bubble-size: clamp(4.9rem, 7vw, 5.6rem);
+  --bubble-size: clamp(4.1rem, 6vw, 4.75rem);
   position: absolute;
   left: var(--software-left, 50%);
   top: var(--software-top, var(--software-center-y));
@@ -1389,6 +1393,7 @@ body[data-page="About"] main {
 
 .software-card--cv,
 .software-card--pink {
+  --bubble-size: clamp(5.9rem, 8.5vw, 6.8rem);
   background: radial-gradient(circle at 35% 28%, rgba(255, 255, 255, 0.95), rgba(255, 232, 237, 0.78) 54%, rgba(248, 196, 207, 0.68));
   border-color: rgba(255, 255, 255, 0.96);
   color: #9f3d55;
@@ -1404,7 +1409,6 @@ body[data-page="About"] main {
 
 .software-card--cv {
   --radius: 300px;
-  --bubble-size: clamp(5.9rem, 8.5vw, 6.8rem);
 }
 
 .software-card::before {
@@ -1428,7 +1432,7 @@ body[data-page="About"] main {
   filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.75));
 }
 
-.software-lines ellipse {
+.software-lines circle {
   fill: none;
   stroke: rgba(223, 117, 132, 0.46);
   stroke-width: 1;
@@ -1438,76 +1442,79 @@ body[data-page="About"] main {
 
 .software-card:nth-of-type(1) {
   --software-left: 50%;
-  --software-top: 10%;
+  --software-top: 11%;
 }
 
 .software-card:nth-of-type(2) {
-  --software-left: 61%;
-  --software-top: 32%;
+  --software-left: 50%;
+  --software-top: 27%;
 }
 
 .software-card:nth-of-type(3) {
-  --software-left: 65%;
-  --software-top: 65%;
+  --software-left: 66%;
+  --software-top: 34%;
 }
 
 .software-card:nth-of-type(4) {
-  --software-left: 94%;
-  --software-top: 50%;
+  --software-left: 84%;
+  --software-top: 30.5%;
 }
 
 .software-card:nth-of-type(5) {
-  --software-left: 72%;
-  --software-top: 84%;
-  --bubble-size: clamp(5.8rem, 8vw, 6.4rem);
+  --software-left: 73%;
+  --software-top: 50%;
 }
 
 .software-card:nth-of-type(6) {
-  --software-left: 35%;
-  --software-top: 65%;
+  --software-left: 66%;
+  --software-top: 66%;
 }
 
 .software-card:nth-of-type(7) {
-  --software-left: 20%;
-  --software-top: 84%;
+  --software-left: 50%;
+  --software-top: 89%;
 }
 
 .software-card:nth-of-type(8) {
   --software-left: 50%;
-  --software-top: 74%;
+  --software-top: 73%;
 }
 
 .software-card:nth-of-type(9) {
-  --software-left: 86%;
-  --software-top: 84%;
+  --software-left: 84%;
+  --software-top: 69.5%;
 }
 
 .software-card:nth-of-type(10) {
-  --software-left: 6%;
-  --software-top: 31%;
+  --software-left: 16%;
+  --software-top: 30.5%;
 }
 
 .software-card:nth-of-type(11) {
-  --software-left: 13%;
-  --software-top: 58%;
+  --software-left: 16%;
+  --software-top: 69.5%;
 }
 
 .software-card:nth-of-type(12) {
-  --software-left: 37%;
-  --software-top: 33%;
+  --software-left: 34%;
+  --software-top: 66%;
 }
 
 .software-card:nth-of-type(13) {
-  --software-left: 82%;
-  --software-top: 31%;
+  --software-left: 27%;
+  --software-top: 50%;
 }
 
 .software-card:nth-of-type(14) {
   --software-left: 34%;
-  --software-top: 84%;
+  --software-top: 34%;
 }
 
 @media (max-width: 760px) {
+  #software-skills {
+    padding: 1.5rem 1rem 1rem;
+  }
+
   #software-skills::before {
     opacity: 0.58;
     filter: blur(10px) saturate(1);
@@ -1519,7 +1526,8 @@ body[data-page="About"] main {
     gap: 0.8rem;
     width: 100%;
     min-height: 0;
-    margin-top: 1.5rem;
+    aspect-ratio: auto;
+    margin: 0.75rem auto 0;
   }
 
   .software-grid::before,
@@ -1535,8 +1543,8 @@ body[data-page="About"] main {
     position: relative;
     left: auto;
     top: auto;
-    width: 100%;
-    max-width: 9rem;
+    width: var(--bubble-size);
+    max-width: 100%;
     justify-self: center;
     padding: 0.85rem 0.7rem;
     transform: none;
