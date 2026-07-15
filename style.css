@@ -1285,8 +1285,8 @@ body[data-page="About"] main {
 }
 
 .software-card:nth-of-type(14) {
-  --software-left: 82%;
-  --software-top: 68%;
+  --software-left: 34%;
+  --software-top: 84%;
 }
 
 @media (max-width: 760px) {
