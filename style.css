@@ -1724,25 +1724,32 @@ body[data-page="About"] main {
 
   .hero {
     min-height: 0;
-    padding-top: clamp(16rem, 38vw, 20rem);
+    padding-top: clamp(15rem, 60vw, 19.5rem);
+  }
+
+  .hero::before,
+  .hero::after {
+    display: none;
   }
 
   .image-slot--hero {
     position: absolute;
-    top: -1.25rem;
-    left: -9%;
-    right: -9%;
+    top: 0;
+    right: 0;
+    left: auto;
     bottom: auto;
-    width: auto;
-    max-width: none;
-    height: calc(clamp(15rem, 36vw, 19rem) + 1.25rem);
+    width: clamp(17rem, 76vw, 28rem);
+    max-width: 28rem;
+    height: clamp(13rem, 52vw, 20rem);
     margin: 0;
-    border-radius: 0 0 55% 45% / 0 0 20% 24%;
-    transform: rotate(-2deg);
+    border-radius: 0 0 0 100% / 0 0 0 100%;
+    transform: none;
   }
 
   .image-slot--hero img {
-    object-position: center 18%;
+    object-position: center 26%;
+    transform: scale(1.12);
+    transform-origin: 100% 26%;
   }
 
   .hero-content {
