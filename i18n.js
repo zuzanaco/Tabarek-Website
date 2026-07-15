@@ -11,9 +11,9 @@
     { name: "ScanAdhoc" },
     { name: "Prokas", cv: true },
     { name: "BtM Sys" },
-    { name: "PHARMATECHNIK", lines: ["PHARMA", "TECHNIK"] },
+    { name: "PHARMATECHNIK", cv: true, lines: ["PHARMA", "TECHNIK"] },
     { name: "Lauer-Fischer", cv: true, lines: ["Lauer-", "Fischer"] },
-    { name: "AwintaONE" },
+    { name: "AwintaONE", pink: true },
     { name: "Aposoft" },
     { name: "ApothekeOnline", lines: ["Apotheke", "Online"] },
     { name: "Pharma4U" }
@@ -112,6 +112,7 @@
       },
       services: {
         title: "Leistungen",
+        offerTitle: "So unterstütze ich Sie",
         intro: "Ich unterstütze Apotheken bei personellen Engpässen im Raum Berlin und Brandenburg. Auf Anfrage bin ich auch bundesweit im Einsatz. Meine aktuelle Verfügbarkeit teile ich Ihnen gerne auf Anfrage mit.",
         badge: "Nach Vereinbarung",
         experienceTitle: "Erfahrung auf einen Blick",
@@ -119,9 +120,12 @@
         experience2: "Kurz- und langfristige Vertretungseinsätze",
         experience3: "5 Monate Erfahrung in einer Versandapotheke",
         experience4: "Wochen- bis monatelange Einsätze in spezialisierten Fachapotheken:",
-        experience5: "Heimversorgung: Heimverblisterung, Medikationsanalysen sowie Betreuung von Arztpraxen und Pflegediensten",
-        experience6: "Cannabisversorgung: Prüfung, Dokumentation und Abgabe von Cannabisarzneimitteln",
-        experience7: "Center-Apotheken: Aktive Mitarbeit im Handverkauf. Sicherer Umgang mit hohem Kundenaufkommen.",
+        experience5Label: "Heimversorgung:",
+        experience5Body: "Heimverblisterung, Medikationsanalysen sowie Betreuung von Arztpraxen und Pflegediensten",
+        experience6Label: "Cannabisversorgung:",
+        experience6Body: "Prüfung, Dokumentation und Abgabe von Cannabisarzneimitteln",
+        experience7Label: "Center-Apotheken:",
+        experience7Body: "Aktive Mitarbeit im Handverkauf. Sicherer Umgang mit hohem Kundenaufkommen.",
         s1Title: "Vertretung der Apothekenleitung",
         s1Body: "Zuverlässige Vertretung der Apothekenleitung bei Urlaub, Krankheit oder anderen Ausfällen.",
         s2Title: "Kundenberatung & Betreuung",
@@ -133,9 +137,7 @@
         s5Title: "Notdienste",
         s5Body: "Übernahme von Notdiensten im Rahmen eines laufenden Vertretungseinsatzes.",
         s6Title: "Dokumentation",
-        s6Body: "Dokumentation von BtM-Rezepten, Importen, Tierarzneimitteln und weiteren Sonderformen.",
-        s9Title: "Medizinalcannabis",
-        s9Body: "Prüfung, Dokumentation und Abgabe von Cannabisarzneimitteln."
+        s6Body: "Dokumentation von BtM-Rezepten, Importen, Tierarzneimitteln und weiteren Sonderformen."
       },
       software: {
         title: "Softwarekenntnisse",
@@ -281,6 +283,7 @@
       },
       services: {
         title: "Services",
+        offerTitle: "What I offer",
         intro: "I cover for you in all staffing situations in the Berlin and Brandenburg region. Nationwide on request. Current availability on request.",
         badge: "By arrangement",
         experienceTitle: "Experience at a glance",
@@ -288,9 +291,12 @@
         experience2: "Short- and long-term locum assignments",
         experience3: "5 months of experience in a mail-order pharmacy",
         experience4: "Assignments lasting weeks to months in specialized pharmacies:",
-        experience5: "Care-home supply: unit-dose blister packaging, medication reviews and support for doctors' offices and care services",
-        experience6: "Cannabis supply: checking, documentation and dispensing of medicinal cannabis products",
-        experience7: "Shopping center pharmacies: active OTC work and confident handling of high customer volume.",
+        experience5Label: "Care-home supply:",
+        experience5Body: "unit-dose blister packaging, medication reviews and support for doctors' offices and care services",
+        experience6Label: "Cannabis supply:",
+        experience6Body: "checking, documentation and dispensing of medicinal cannabis products",
+        experience7Label: "Shopping center pharmacies:",
+        experience7Body: "active OTC work and confident handling of high customer volume.",
         s1Title: "Management cover",
         s1Body: "Cover for the pharmacy manager during holidays, illness or other reasons.",
         s2Title: "Customer advice & care",
@@ -302,9 +308,7 @@
         s5Title: "Emergency services",
         s5Body: "Emergency service cover as part of an ongoing locum assignment.",
         s6Title: "Documentation",
-        s6Body: "Documentation of narcotic prescriptions, imports, veterinary medicines and other special forms.",
-        s9Title: "Medicinal cannabis",
-        s9Body: "Checking, documentation and dispensing of medicinal cannabis products."
+        s6Body: "Documentation of narcotic prescriptions, imports, veterinary medicines and other special forms."
       },
       software: {
         title: "Software skills",
@@ -436,7 +440,9 @@
       list.appendChild(lines);
       SOFTWARE_SKILLS.forEach((skill) => {
         const item = document.createElement("li");
-        item.className = skill.cv ? "software-card software-card--cv" : "software-card";
+        item.className = "software-card";
+        if (skill.cv) item.classList.add("software-card--cv");
+        if (skill.pink) item.classList.add("software-card--pink");
         item.setAttribute("aria-label", skill.name);
         if (skill.lines) {
           skill.lines.forEach((line) => {
@@ -555,6 +561,7 @@
       [".why-grid", ":scope > .why-card"],
       [".language-list", ":scope > li"],
       [".experience-list", ":scope > li"],
+      [".experience-cascade", ".experience-cascade__item"],
       [".service-grid", ":scope > .service-card"],
       [".software-grid", ":scope > .software-card"],
       [".contact-cards", ":scope > .contact-card, :scope > .contact-side"],
