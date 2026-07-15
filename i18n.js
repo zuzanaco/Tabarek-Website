@@ -483,16 +483,12 @@
       svg.setAttribute("height", listRect.height);
       svg.replaceChildren();
 
-      [
-        [0.29, 0.17],
-        [0.4, 0.28],
-        [0.49, 0.4]
-      ].forEach(([radiusX, radiusY]) => {
-        const orbit = document.createElementNS("http://www.w3.org/2000/svg", "ellipse");
+      const orbitBase = Math.min(listRect.width, listRect.height);
+      [0.23, 0.39].forEach((radius) => {
+        const orbit = document.createElementNS("http://www.w3.org/2000/svg", "circle");
         orbit.setAttribute("cx", centerX);
         orbit.setAttribute("cy", centerY);
-        orbit.setAttribute("rx", listRect.width * radiusX);
-        orbit.setAttribute("ry", listRect.height * radiusY);
+        orbit.setAttribute("r", orbitBase * radius);
         svg.appendChild(orbit);
       });
 
