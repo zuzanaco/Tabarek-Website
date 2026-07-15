@@ -160,7 +160,11 @@
         formDateStart: "Startdatum",
         formDateEnd: "Enddatum",
         formMessage: "Nachricht",
-        formSubmit: "Anfrage senden"
+        formSubmit: "Anfrage senden",
+        formError: "Die Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut oder kontaktieren Sie mich per E-Mail.",
+        successTitle: "Vielen Dank",
+        successMessage: "Vielen Dank für Ihre Nachricht. Ich melde mich in Kürze bei Ihnen.",
+        successCloseAria: "Schließen"
       },
       thankyou: {
         title: "Danke — Ihre Anfrage wurde gesendet",
@@ -325,7 +329,11 @@
         formDateStart: "Start date",
         formDateEnd: "End date",
         formMessage: "Message",
-        formSubmit: "Submit inquiry"
+        formSubmit: "Submit inquiry",
+        formError: "Your message could not be sent. Please try again or contact me by email.",
+        successTitle: "Thank you",
+        successMessage: "Thank you for your message. I'll be in touch with you shortly.",
+        successCloseAria: "Close"
       },
       thankyou: {
         title: "Thank you — your inquiry has been sent",
@@ -633,6 +641,55 @@
     });
   }
 
+  function initContactForm() {
+    const form = document.querySelector("[data-contact-form]");
+    const dialog = document.querySelector("[data-form-success]");
+    if (!form || !dialog) return;
+
+    const submitButton = form.querySelector('[type="submit"]');
+    const status = form.querySelector("[data-form-status]");
+    const closeButton = dialog.querySelector("[data-form-success-close]");
+
+    const closeDialog = () => {
+      if (typeof dialog.close === "function") dialog.close();
+      else dialog.removeAttribute("open");
+    };
+
+    if (closeButton) closeButton.addEventListener("click", closeDialog);
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      if (status) status.textContent = "";
+      if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.setAttribute("aria-busy", "true");
+      }
+
+      try {
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: new FormData(form),
+          headers: { Accept: "application/json" }
+        });
+
+        if (!response.ok) throw new Error(`Form submission failed: ${response.status}`);
+
+        form.reset();
+        if (typeof dialog.showModal === "function") dialog.showModal();
+        else dialog.setAttribute("open", "");
+      } catch (error) {
+        if (status) {
+          status.textContent = getPath("contact.formError", currentLang()) || "Your message could not be sent.";
+        }
+      } finally {
+        if (submitButton) {
+          submitButton.disabled = false;
+          submitButton.removeAttribute("aria-busy");
+        }
+      }
+    });
+  }
+
   function init() {
     const stored = getStoredLang();
     const lang = stored || detectBrowserLang();
@@ -641,6 +698,7 @@
     initSectionAnimations();
     initItemAnimations();
     initReviewCarousels();
+    initContactForm();
 
     document.querySelectorAll(".lang-switch [data-lang]").forEach((btn) => {
       btn.addEventListener("click", () => {
