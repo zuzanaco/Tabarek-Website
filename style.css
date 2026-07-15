@@ -1039,7 +1039,7 @@ body[data-page="About"] main {
   overflow: hidden;
   isolation: isolate;
   background: rgba(255, 255, 255, 0.48);
-  padding: 1.25rem 1rem;
+  padding: 2.75rem;
 }
 
 #software-skills::before {
