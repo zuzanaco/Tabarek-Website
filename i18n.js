@@ -469,6 +469,19 @@
       svg.setAttribute("height", listRect.height);
       svg.replaceChildren();
 
+      [
+        [0.29, 0.17],
+        [0.4, 0.28],
+        [0.49, 0.4]
+      ].forEach(([radiusX, radiusY]) => {
+        const orbit = document.createElementNS("http://www.w3.org/2000/svg", "ellipse");
+        orbit.setAttribute("cx", centerX);
+        orbit.setAttribute("cy", centerY);
+        orbit.setAttribute("rx", listRect.width * radiusX);
+        orbit.setAttribute("ry", listRect.height * radiusY);
+        svg.appendChild(orbit);
+      });
+
       cards.forEach((card) => {
         const rect = card.getBoundingClientRect();
         const cardX = rect.left - listRect.left + rect.width / 2;
