@@ -90,7 +90,9 @@
         b2Quote: "Platzhalter — diese Bewertung wird noch durch eine echte Kundenreferenz ersetzt.",
         b3Name: "Bewertung 3",
         b3Role: "Apotheke",
-        b3Quote: "Platzhalter — diese Bewertung wird noch durch eine echte Kundenreferenz ersetzt."
+        b3Quote: "Platzhalter — diese Bewertung wird noch durch eine echte Kundenreferenz ersetzt.",
+        previousAria: "Vorherige Bewertungen",
+        nextAria: "Nächste Bewertungen"
       },
       why: {
         title: "Warum Sie mich buchen sollten",
@@ -253,7 +255,9 @@
         b2Quote: "Placeholder — this review will be replaced with a real client reference.",
         b3Name: "Review 3",
         b3Role: "Pharmacy",
-        b3Quote: "Placeholder — this review will be replaced with a real client reference."
+        b3Quote: "Placeholder — this review will be replaced with a real client reference.",
+        previousAria: "Previous reviews",
+        nextAria: "Next reviews"
       },
       why: {
         title: "Why you should book me",
@@ -522,12 +526,108 @@
     sections.forEach((section) => observer.observe(section));
   }
 
+  function initItemAnimations() {
+    const groupDefinitions = [
+      [".counters", ":scope > .counter"],
+      [".grid", ":scope > article"],
+      [".testimonials-grid", ":scope > .testimonial-card"],
+      [".why-grid", ":scope > .why-card"],
+      [".language-list", ":scope > li"],
+      [".experience-list", ":scope > li"],
+      [".service-grid", ":scope > .service-card"],
+      [".software-grid", ":scope > .software-card"],
+      [".contact-cards", ":scope > .contact-card, :scope > .contact-side"],
+      [".contact-card--email", ":scope > .contact-detail"]
+    ];
+
+    const groups = groupDefinitions.flatMap(([groupSelector, itemSelector]) =>
+      Array.from(document.querySelectorAll(groupSelector)).map((group) => ({
+        group,
+        items: Array.from(group.querySelectorAll(itemSelector))
+      }))
+    ).filter(({ items }) => items.length > 0);
+
+    if (groups.length === 0) return;
+
+    groups.forEach(({ group, items }) => {
+      group.classList.add("stagger-group");
+      items.forEach((item, index) => {
+        item.classList.add("stagger-item");
+        item.style.setProperty("--item-reveal-delay", `${Math.min(index * 55, 385)}ms`);
+      });
+    });
+
+    const reveal = (group) => group.classList.add("stagger-group--visible");
+
+    if (!("IntersectionObserver" in window)) {
+      groups.forEach(({ group }) => reveal(group));
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            reveal(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -6% 0px" }
+    );
+
+    groups.forEach(({ group }) => observer.observe(group));
+  }
+
+  function initReviewCarousels() {
+    document.querySelectorAll("[data-review-carousel]").forEach((carousel) => {
+      const track = carousel.querySelector("[data-review-track]");
+      const previous = carousel.querySelector("[data-review-previous]");
+      const next = carousel.querySelector("[data-review-next]");
+      if (!track || !previous || !next) return;
+
+      const updateControls = () => {
+        const maxScroll = Math.max(0, track.scrollWidth - track.clientWidth);
+        const hasOverflow = maxScroll > 2;
+        previous.hidden = !hasOverflow;
+        next.hidden = !hasOverflow;
+        previous.disabled = !hasOverflow || track.scrollLeft <= 2;
+        next.disabled = !hasOverflow || track.scrollLeft >= maxScroll - 2;
+      };
+
+      const scroll = (direction) => {
+        const firstCard = track.querySelector(".testimonial-card");
+        if (!firstCard) return;
+        const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+        const distance = firstCard.getBoundingClientRect().width + gap;
+        const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        track.scrollBy({
+          left: direction * distance,
+          behavior: reduceMotion ? "auto" : "smooth"
+        });
+      };
+
+      previous.addEventListener("click", () => scroll(-1));
+      next.addEventListener("click", () => scroll(1));
+      track.addEventListener("scroll", updateControls, { passive: true });
+
+      if ("ResizeObserver" in window) {
+        const observer = new ResizeObserver(updateControls);
+        observer.observe(track);
+      }
+
+      requestAnimationFrame(updateControls);
+    });
+  }
+
   function init() {
     const stored = getStoredLang();
     const lang = stored || detectBrowserLang();
     renderSoftwareSkills();
     applyLang(lang);
     initSectionAnimations();
+    initItemAnimations();
+    initReviewCarousels();
 
     document.querySelectorAll(".lang-switch [data-lang]").forEach((btn) => {
       btn.addEventListener("click", () => {

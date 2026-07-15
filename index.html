@@ -8,7 +8,7 @@
       content="Tabarek Khazraj bietet flexible Vertretungen für Apotheken in Deutschland."
     />
     <title>Tabarek Khazraj — Vertretungs-Apothekerin</title>
-    <link rel="stylesheet" href="style.css?v=20260715-contact-details" />
+    <link rel="stylesheet" href="style.css?v=20260715-review-carousel" />
   </head>
   <body data-page="Home">
     <header class="top-nav">
@@ -114,34 +114,38 @@
       <section class="container section" id="bewertungen">
         <h2 data-i18n="reviews.title">Bewertungen</h2>
         <p class="intro-text" data-i18n="reviews.lead">Was andere über mich sagen</p>
-        <div class="testimonials-grid">
-          <article class="testimonial-card">
-            <div class="testimonial-avatar" aria-hidden="true">B1</div>
-            <h3 class="testimonial-meta" data-i18n="reviews.b1Name">Bewertung 1</h3>
-            <p class="testimonial-role" data-i18n="reviews.b1Role">Apotheke</p>
-            <p class="testimonial-quote" data-i18n="reviews.b1Quote">
-              Platzhalter — diese Bewertung wird noch durch eine echte
-              Kundenreferenz ersetzt.
-            </p>
-          </article>
-          <article class="testimonial-card">
-            <div class="testimonial-avatar" aria-hidden="true">B2</div>
-            <h3 class="testimonial-meta" data-i18n="reviews.b2Name">Bewertung 2</h3>
-            <p class="testimonial-role" data-i18n="reviews.b2Role">Inhaber*in</p>
-            <p class="testimonial-quote" data-i18n="reviews.b2Quote">
-              Platzhalter — diese Bewertung wird noch durch eine echte
-              Kundenreferenz ersetzt.
-            </p>
-          </article>
-          <article class="testimonial-card">
-            <div class="testimonial-avatar" aria-hidden="true">B3</div>
-            <h3 class="testimonial-meta" data-i18n="reviews.b3Name">Bewertung 3</h3>
-            <p class="testimonial-role" data-i18n="reviews.b3Role">Apotheke</p>
-            <p class="testimonial-quote" data-i18n="reviews.b3Quote">
-              Platzhalter — diese Bewertung wird noch durch eine echte
-              Kundenreferenz ersetzt.
-            </p>
-          </article>
+        <div class="reviews-carousel" data-review-carousel>
+          <button class="review-arrow review-arrow--previous" type="button" data-review-previous hidden aria-label="Vorherige Bewertungen" data-i18n-attr="aria-label:reviews.previousAria">&#8592;</button>
+          <div class="testimonials-grid" data-review-track role="region" tabindex="0" aria-label="Bewertungen" data-i18n-attr="aria-label:reviews.title">
+            <article class="testimonial-card">
+              <div class="testimonial-avatar" aria-hidden="true">B1</div>
+              <h3 class="testimonial-meta" data-i18n="reviews.b1Name">Bewertung 1</h3>
+              <p class="testimonial-role" data-i18n="reviews.b1Role">Apotheke</p>
+              <p class="testimonial-quote" data-i18n="reviews.b1Quote">
+                Platzhalter — diese Bewertung wird noch durch eine echte
+                Kundenreferenz ersetzt.
+              </p>
+            </article>
+            <article class="testimonial-card">
+              <div class="testimonial-avatar" aria-hidden="true">B2</div>
+              <h3 class="testimonial-meta" data-i18n="reviews.b2Name">Bewertung 2</h3>
+              <p class="testimonial-role" data-i18n="reviews.b2Role">Inhaber*in</p>
+              <p class="testimonial-quote" data-i18n="reviews.b2Quote">
+                Platzhalter — diese Bewertung wird noch durch eine echte
+                Kundenreferenz ersetzt.
+              </p>
+            </article>
+            <article class="testimonial-card">
+              <div class="testimonial-avatar" aria-hidden="true">B3</div>
+              <h3 class="testimonial-meta" data-i18n="reviews.b3Name">Bewertung 3</h3>
+              <p class="testimonial-role" data-i18n="reviews.b3Role">Apotheke</p>
+              <p class="testimonial-quote" data-i18n="reviews.b3Quote">
+                Platzhalter — diese Bewertung wird noch durch eine echte
+                Kundenreferenz ersetzt.
+              </p>
+            </article>
+          </div>
+          <button class="review-arrow review-arrow--next" type="button" data-review-next hidden aria-label="Nächste Bewertungen" data-i18n-attr="aria-label:reviews.nextAria">&#8594;</button>
         </div>
       </section>
 
@@ -188,6 +192,6 @@
       </div>
     </footer>
 
-    <script src="i18n.js?v=20260715-contact-details"></script>
+    <script src="i18n.js?v=20260715-review-carousel"></script>
   </body>
 </html>
