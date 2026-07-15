@@ -1108,12 +1108,12 @@ body[data-page="About"] main {
 
 .stagger-item {
   opacity: 0;
-  translate: 0 14px;
-  scale: 0.985;
+  translate: 0 32px;
+  scale: 0.97;
   transition:
-    opacity 0.5s ease,
-    translate 0.62s cubic-bezier(0.22, 1, 0.36, 1),
-    scale 0.62s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.58s ease,
+    translate 0.76s cubic-bezier(0.22, 1, 0.36, 1),
+    scale 0.76s cubic-bezier(0.22, 1, 0.36, 1),
     filter 0.24s ease;
   transition-delay: var(--item-reveal-delay, 0ms);
   will-change: opacity, translate, scale;
@@ -1125,12 +1125,53 @@ body[data-page="About"] main {
   scale: 1;
 }
 
+@keyframes content-card-wiggle {
+  0%,
+  100% {
+    rotate: 0deg;
+  }
+  30% {
+    rotate: -0.35deg;
+  }
+  65% {
+    rotate: 0.35deg;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  :is(
+    .grid > article,
+    .service-card,
+    .why-card,
+    .testimonial-card,
+    .language-list > li,
+    .experience-list > li,
+    .contact-grid > div,
+    .contact-detail
+  ):hover {
+    animation: content-card-wiggle 260ms ease-in-out;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .stagger-item {
     opacity: 1;
     translate: none;
     scale: none;
     transition: none;
+  }
+
+  :is(
+    .grid > article,
+    .service-card,
+    .why-card,
+    .testimonial-card,
+    .language-list > li,
+    .experience-list > li,
+    .contact-grid > div,
+    .contact-detail
+  ):hover {
+    animation: none;
   }
 }
 
