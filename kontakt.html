@@ -8,7 +8,7 @@
       content="Kontakt zu Tabarek Khazraj — Anfrage für eine Apothekenvertretung senden."
     />
     <title>Kontakt — Tabarek Khazraj</title>
-    <link rel="stylesheet" href="style.css?v=20260714-section-animation" />
+    <link rel="stylesheet" href="style.css?v=20260715-software-hover" />
   </head>
   <body data-page="Contact">
     <header class="top-nav">
@@ -50,11 +50,11 @@
         <div class="contact-cards">
           <article class="contact-card">
             <h2 data-i18n="contact.bookTitle">Vertretung anfragen</h2>
-            <form class="contact-form" action="thankyou.html" method="get">
+            <form class="contact-form" action="https://formspree.io/f/mdaqogkd" method="post">
               <div class="form-row-split">
                 <div class="form-row">
-                  <label for="name" data-i18n="contact.formName">Name</label>
-                  <input id="name" name="name" autocomplete="name" required />
+                  <label for="ansprechpartner" data-i18n="contact.formName">Ansprechpartner</label>
+                  <input id="ansprechpartner" name="ansprechpartner" autocomplete="name" required />
                 </div>
                 <div class="form-row">
                   <label for="apotheke" data-i18n="contact.formPharmacy">Apotheke</label>
@@ -67,7 +67,7 @@
                   <input id="email" type="email" name="email" autocomplete="email" required />
                 </div>
                 <div class="form-row">
-                  <label for="telefon" data-i18n="contact.formPhone">Telefon</label>
+                  <label for="telefon" data-i18n="contact.formPhone">Telefonnummer</label>
                   <input id="telefon" name="telefon" autocomplete="tel" />
                 </div>
               </div>
@@ -82,34 +82,47 @@
                 </div>
               </div>
               <div class="form-row">
-                <label for="vertretung" data-i18n="contact.formType">Art der Vertretung</label>
-                <input id="vertretung" type="text" name="vertretung" />
-              </div>
-              <div class="form-row">
                 <label for="nachricht" data-i18n="contact.formMessage">Nachricht</label>
                 <textarea id="nachricht" name="nachricht" required></textarea>
               </div>
-              <button class="button" type="submit" data-i18n="contact.formSubmit">Anfrage absenden</button>
+              <button class="button" type="submit" data-i18n="contact.formSubmit">Anfrage senden</button>
             </form>
           </article>
 
           <div class="contact-side">
             <article class="contact-card contact-card--email">
-              <h2 data-i18n="contact.emailTitle">Kontakt per E-Mail</h2>
-              <p class="contact-card__lead" data-i18n="contact.emailBody">Für weitere Anfragen erreichen Sie mich unter:</p>
-              <div class="email-copy">
-                <a href="mailto:tabarakkhazraj@gmail.com" class="email-address">tabarakkhazraj@gmail.com</a>
-                <button type="button" class="copy-btn" id="copy-email" aria-label="E-Mail kopieren" data-i18n-attr="aria-label:contact.copyLabel">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <rect x="9" y="9" width="11" height="11" rx="2"/>
-                    <path d="M5 15V5a2 2 0 0 1 2-2h10"/>
+              <h2 data-i18n="contact.emailTitle">Kontaktdaten</h2>
+              <div class="contact-detail">
+                <span class="contact-detail__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <path d="m3 7 9 6 9-6" />
                   </svg>
-                  <span class="copy-btn__label" data-i18n="contact.copyLabel">Kopieren</span>
+                </span>
+                <div class="contact-detail__content">
+                  <p class="contact-card__lead" data-i18n="contact.emailBody">E-Mail (bevorzugt)</p>
+                  <a href="mailto:tabarekkhazraj@gmail.com" class="contact-copy__value" data-copy-value="tabarekkhazraj@gmail.com">tabarekkhazraj@gmail.com</a>
+                </div>
+                <button type="button" class="copy-btn" data-copy-target="tabarekkhazraj@gmail.com" data-copy-feedback="contact.emailCopied" aria-label="E-Mail kopieren" data-i18n-attr="aria-label:contact.copyEmailAria">
+                  <span class="copy-btn__label" data-i18n="contact.copyLabel">Copy</span>
                 </button>
               </div>
-              <p class="copy-feedback" id="copy-feedback" aria-live="polite" data-i18n="contact.copied">Kopiert!</p>
+              <div class="contact-detail">
+                <span class="contact-detail__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.35 1.9.66 2.81a2 2 0 0 1-.45 2.11L8.05 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.31 1.85.53 2.81.66A2 2 0 0 1 22 16.92Z" />
+                  </svg>
+                </span>
+                <div class="contact-detail__content">
+                  <p class="contact-card__lead" data-i18n="contact.phoneLabel">Telefon</p>
+                  <a href="tel:+4915730217850" class="contact-copy__value" data-copy-value="015730217850">015730217850</a>
+                </div>
+                <button type="button" class="copy-btn" data-copy-target="015730217850" data-copy-feedback="contact.phoneCopied" aria-label="Telefonnummer kopieren" data-i18n-attr="aria-label:contact.copyPhoneAria">
+                  <span class="copy-btn__label" data-i18n="contact.copyLabel">Copy</span>
+                </button>
+              </div>
+              <p class="copy-feedback" id="copy-feedback" aria-live="polite"></p>
             </article>
-            <img class="contact-card__image" src="images/shelf.png" alt="" aria-hidden="true" />
           </div>
         </div>
       </section>
@@ -126,6 +139,6 @@
       </div>
     </footer>
 
-    <script src="i18n.js?v=20260714-section-animation"></script>
+    <script src="i18n.js?v=20260715-site-animation"></script>
   </body>
 </html>

@@ -9,13 +9,14 @@
     { name: "ADG", cv: true },
     { name: "Dr. Lennartz Laborprogramm", lines: ["Dr. Lennartz", "Labor", "programm"] },
     { name: "ScanAdhoc" },
-    { name: "PROKAS", cv: true },
+    { name: "Prokas", cv: true },
     { name: "BtM Sys" },
-    { name: "Pharmatechnik", lines: ["Pharma", "technik"] },
+    { name: "PHARMATECHNIK", lines: ["PHARMA", "TECHNIK"] },
     { name: "Lauer-Fischer", cv: true, lines: ["Lauer-", "Fischer"] },
+    { name: "AwintaONE" },
     { name: "Aposoft" },
-    { name: "apotheke online", lines: ["apotheke", "online"] },
-    { name: "pharma4you" }
+    { name: "ApothekeOnline", lines: ["Apotheke", "Online"] },
+    { name: "Pharma4U" }
   ];
 
   const translations = {
@@ -45,37 +46,36 @@
         en: "EN"
       },
       hero: {
-        eyebrow: "Vertretungs-Apothekerin",
+        eyebrow: "Vertretungsapothekerin",
         title: "Tabarek Khazraj",
-        lead: "Zuverlässige pharmazeutische Vertretung für Apotheken, Notdienste und kurzfristige Personalengpässe.",
-        ctaPrimary: "Anfrage senden",
+        lead: "Zuverlässige Unterstützung für Apotheken bei Urlaub, Krankheit und personellen Engpässen.",
+        location: "Berlin, Brandenburg und nach Vereinbarung deutschlandweit.",
+        ctaPrimary: "Jetzt anfragen",
         ctaSecondary: "Direkt per E-Mail",
         portraitAlt: "Porträt von Tabarek Khazraj"
       },
       about: {
         title: "Pharmazeutische Unterstützung, wenn sie gebraucht wird",
-        intro: "Seit April 2023 vertrete ich öffentliche Apotheken in Berlin und bundesweit - mit schneller Einarbeitung in Teams, Abläufe und Warenwirtschaftssysteme.",
-        card1Title: "Tagesgeschäft",
-        card1Body: "Handverkauf, Beratung, Rezeptprüfung und pharmazeutische Betreuung.",
-        card2Title: "Notdienst",
-        card2Body: "Verlässliche Vertretung für Nacht-, Wochenend- und Feiertagsdienste.",
-        card3Title: "Team-Entlastung",
-        card3Body: "Unterstützung bei Urlaub, Krankheit, Fortbildung oder hoher Auslastung."
+        intro: "Ich übernehme Vertretungen im Apothekenalltag, unterstütze Teams bei planbaren Abwesenheiten und helfe bei kurzfristigen Engpässen.",
+        card1Title: "Teamentlastung",
+        card1Body: "Unterstützung bei Urlaub, Krankheit, Fortbildung oder hoher Auslastung.",
+        card2Title: "Tagesgeschäft",
+        card2Body: "Handverkauf, Beratung, Rezeptbelieferung und pharmazeutische Betreuung.",
+        card3Title: "Chefvertretung",
+        card3Body: "Zuverlässige und verantwortungsvolle Übernahme der Apothekenleitung bei Urlaub oder kurzfristiger Abwesenheit."
       },
       aboutpage: {
         title: "Über mich",
-        steckbriefTitle: "Steckbrief",
-        steckbriefP1: "Ich bin approbierte Apothekerin und seit April 2023 als selbstständige Vertretungsapothekerin in Berlin und bundesweit tätig. In dieser Zeit habe ich mehr als 30 öffentliche Apotheken vertreten und mich schnell in unterschiedliche Teams, Arbeitsabläufe und EDV-Systeme eingearbeitet.",
-        steckbriefP2: "Meine Berufserfahrung verbindet den deutschen Apothekenalltag mit klinischer Pharmazie: Vor meiner Approbation in Berlin 2023 habe ich in öffentlichen Apotheken in Deutschland gearbeitet und von 2018 bis 2021 klinische Einsätze in Onkologie, Innerer Medizin, Endokrinologie und COVID-19-Stationen absolviert.",
-        steckbriefP3: "Die Approbation als Apothekerin habe ich 2023 in Berlin erhalten. Ich bin Mitglied der Apothekerkammer Berlin und habe Pharmazie in einem fünfjährigen Universitätsstudium an der Universität Babylon studiert.",
-        steckbriefP4: "Im Apothekenalltag arbeite ich selbstständig, flexibel und verantwortungsbewusst. Ich unterstütze Teams ruhig und strukturiert, kommuniziere klar mit Kundschaft, Ärztinnen, Ärzten und medizinischem Fachpersonal und entlaste die Apotheke dort, wo gerade Unterstützung gebraucht wird.",
-        steckbriefP5: "Durch die Verbindung aus klinischer und öffentlicher Apothekenerfahrung bringe ich einen breiten pharmazeutischen Hintergrund in Vertretungseinsätze ein.",
+        profileP1: "Schon als ich mein Pharmaziestudium an der Universität Babylon im Irak begann, war mir klar, dass ich einen Beruf gewählt hatte, mit dem ich Menschen jeden Tag ganz unmittelbar helfen kann. Mein Studium wurde vollständig auf Englisch durchgeführt und vermittelte mir ein breites Spektrum pharmazeutischer Fachgebiete. Deshalb fällt mir die Kommunikation auf Englisch sowohl im Alltag als auch in der pharmazeutischen Fachsprache leicht.",
+        profileP2: "In meinem letzten Studienjahr habe ich begonnen, als Pharmareferentin zu arbeiten. Da der Kontakt mit Menschen und Kommunikation schon immer zu meinen Stärken gehörten, hat mir diese Tätigkeit viel Freude bereitet. Mit der Zeit habe ich jedoch gemerkt, dass ich mein pharmazeutisches Wissen weiter vertiefen möchte. Deshalb habe ich mich für die klinische Pharmazie entschieden und mehrere Jahre in einem Rotationsprogramm als klinische Apothekerin gearbeitet. Dabei konnte ich Erfahrungen in der Inneren Medizin, Endokrinologie, Onkologie und auf der COVID-19-Station sammeln.",
+        profileP3: "Die enge Zusammenarbeit mit Ärztinnen und Ärzten, Pflegekräften sowie meinen pharmazeutischen Kolleginnen und Kollegen hat meine professionellen Kommunikationsfähigkeiten und mein wissenschaftliches Denken weiterentwickelt. Dabei habe ich gelernt, interdisziplinär zusammenzuarbeiten und pharmazeutische Entscheidungen immer mit Blick auf die bestmögliche Patientenversorgung zu treffen.",
+        profileP4: "Schon immer hatte ich den Wunsch, neue Länder, Kulturen und Menschen kennenzulernen. Deshalb habe ich mich entschieden, nach Deutschland zu ziehen. Berlin wurde schnell zu meiner neuen Heimat – eine Stadt, deren Vielfalt, Offenheit und Internationalität mich bis heute begeistern. Ich bin 2021 nach Deutschland gekommen, habe zunächst intensive Deutschkurse besucht, die Fachsprachprüfung erfolgreich abgelegt und anschließend als Apothekerin unter Aufsicht gearbeitet. Nach meiner Approbation im April 2023 habe ich meinen beruflichen Weg in deutschen öffentlichen Apotheken fortgesetzt und arbeite seitdem als selbstständige Vertretungsapothekerin.",
+        profileP5: "Heute schätze ich besonders die Möglichkeit, immer wieder neue Teams, Arbeitsweisen und Apotheken kennenzulernen. Mein Ziel war es schon immer, meine eigene Apotheke zu führen. Jede Vertretung gibt mir die Möglichkeit, unterschiedliche Teams, Führungsstile und Arbeitsweisen kennenzulernen. Diese Erfahrungen helfen mir, mich fachlich und persönlich weiterzuentwickeln – und gleichzeitig jede Apotheke mit vollem Engagement zu unterstützen.",
         languagesTitle: "Sprachkenntnisse",
         languagesIntro: "Sprachen, in denen ich Kund*innen, Ärzt*innen und Teams sicher beraten kann.",
         langDe: "Deutsch",
         langEn: "Englisch",
         langAr: "Arabisch",
-        whyTitle: "Warum Ihre Apotheke bei mir in sicheren Händen ist",
         whyCta: "Anfrage senden",
         workstationAlt: "Tabarek Khazraj zeigt auf etwas"
       },
@@ -90,18 +90,20 @@
         b2Quote: "Platzhalter — diese Bewertung wird noch durch eine echte Kundenreferenz ersetzt.",
         b3Name: "Bewertung 3",
         b3Role: "Apotheke",
-        b3Quote: "Platzhalter — diese Bewertung wird noch durch eine echte Kundenreferenz ersetzt."
+        b3Quote: "Platzhalter — diese Bewertung wird noch durch eine echte Kundenreferenz ersetzt.",
+        previousAria: "Vorherige Bewertungen",
+        nextAria: "Nächste Bewertungen"
       },
       why: {
         title: "Warum Sie mich buchen sollten",
         card1Title: "Kundenorientierung",
-        card1Body: "Ich höre zu, berate verständlich und sorge dafür, dass jede Kundin und jeder Kunde die passende Lösung bekommt.",
+        card1Body: "Ich arbeite gerne mit Menschen, höre aufmerksam zu und berate verständlich, damit jede Kundin und jeder Kunde die passende Lösung erhält.",
         card2Title: "Empathie",
-        card2Body: "Ich nehme Sorgen ernst, ohne mich von schwierigen Situationen vereinnahmen zu lassen — mit Ruhe und Verständnis.",
+        card2Body: "Ich nehme Sorgen ernst, ohne mich von schwierigen Situationen vereinnahmen zu lassen. Mit Ruhe und Verständnis begleite ich Menschen auch in anspruchsvollen Situationen.",
         card3Title: "Kommunikation",
-        card3Body: "Klar, respektvoll und auf Augenhöhe — im Team, gegenüber Ärztinnen und Ärzten und im Kundengespräch.",
+        card3Body: "Klar, respektvoll und auf Augenhöhe – im Team, gegenüber Ärztinnen und Ärzten sowie im Kundengespräch.",
         card4Title: "Flexibilität",
-        card4Body: "Ich passe mich an neue Teams, Warenwirtschaftssysteme und Arbeitszeiten an — von Notdienst bis Urlaubsvertretung.",
+        card4Body: "Ich passe mich schnell an neue Teams, Warenwirtschaftssysteme und Arbeitsabläufe an und arbeite mich zügig in neue Strukturen ein.",
         card5Title: "Teamarbeit",
         card5Body: "Ich füge mich schnell in bestehende Abläufe ein, unterstütze das Team und entlaste die Apothekenleitung spürbar.",
         card6Title: "Fachliche Sicherheit",
@@ -112,24 +114,28 @@
         title: "Leistungen",
         intro: "Ich unterstütze Apotheken bei personellen Engpässen im Raum Berlin und Brandenburg. Auf Anfrage bin ich auch bundesweit im Einsatz. Meine aktuelle Verfügbarkeit teile ich Ihnen gerne auf Anfrage mit.",
         badge: "Nach Vereinbarung",
+        experienceTitle: "Erfahrung auf einen Blick",
+        experience1: "Über 35 Apotheken erfolgreich unterstützt",
+        experience2: "Kurz- und langfristige Vertretungseinsätze",
+        experience3: "5 Monate Erfahrung in einer Versandapotheke",
+        experience4: "Wochen- bis monatelange Einsätze in spezialisierten Fachapotheken:",
+        experience5: "Heimversorgung: Heimverblisterung, Medikationsanalysen sowie Betreuung von Arztpraxen und Pflegediensten",
+        experience6: "Cannabisversorgung: Prüfung, Dokumentation und Abgabe von Cannabisarzneimitteln",
+        experience7: "Center-Apotheken: Aktive Mitarbeit im Handverkauf. Sicherer Umgang mit hohem Kundenaufkommen.",
         s1Title: "Vertretung der Apothekenleitung",
         s1Body: "Zuverlässige Vertretung der Apothekenleitung bei Urlaub, Krankheit oder anderen Ausfällen.",
-        s2Title: "Kundenbetreuung",
-        s2Body: "Aktive Mitarbeit im Handverkauf.",
+        s2Title: "Kundenberatung & Betreuung",
+        s2Body: "Aktive Mitarbeit im Handverkauf und verständliche Beratung im Kundengespräch.",
         s3Title: "Rezeptkontrolle",
-        s3Body: "Erfahrung mit ScanAdhoc und ALG Online sowie mit der klassischen Prüfung ohne Softwareunterstützung.",
+        s3Body: "Erfahrung mit ScanAdhoc sowie mit der klassischen Prüfung ohne Softwareunterstützung.",
         s4Title: "Dienstplanung",
-        s4Body: "Unterstützung bei der Dienstplanung, wenn gewünscht und insbesondere bei längeren Vertretungen.",
-        s5Title: "Notdienst",
-        s5Body: "Nach Absprache auch bundesweit.",
+        s4Body: "Bei langfristigen Vertretungseinsätzen unterstütze ich gerne bei der Dienstplanung.",
+        s5Title: "Notdienste",
+        s5Body: "Übernahme von Notdiensten im Rahmen eines laufenden Vertretungseinsatzes.",
         s6Title: "Dokumentation",
-        s6Body: "Dokumentation von dokumentationspflichtigen Arzneimitteln wie BtM, Importen und weiteren Sonderfällen.",
-        s7Title: "Feedback",
-        s7Body: "Zur Optimierung Ihrer Prozesse führe ich nach der Vertretung gerne ein Feedback-Gespräch mit Ihnen.",
-        s8Title: "Freiberuflichkeit",
-        s8Body: "Erfahrung und Austausch rund um die freiberufliche Tätigkeit als Apothekerin.",
+        s6Body: "Dokumentation von BtM-Rezepten, Importen, Tierarzneimitteln und weiteren Sonderformen.",
         s9Title: "Medizinalcannabis",
-        s9Body: "Beratung und Unterstützung bei Prüfung, Herstellung, Abgabe und Dokumentation."
+        s9Body: "Prüfung, Dokumentation und Abgabe von Cannabisarzneimitteln."
       },
       software: {
         title: "Softwarekenntnisse",
@@ -139,22 +145,22 @@
         title: "Kontakt",
         intro: "Senden Sie mir eine kurze Anfrage mit Zeitraum, Ort und gewünschtem Umfang. Ich melde mich so schnell wie möglich zurück.",
         bookTitle: "Vertretung anfragen",
-        emailTitle: "Kontakt per E-Mail",
-        emailBody: "Für weitere Anfragen erreichen Sie mich unter:",
-        copyLabel: "E-Mail kopieren",
-        copied: "Kopiert!",
-        formName: "Name",
+        emailTitle: "Kontaktdaten",
+        emailBody: "E-Mail (bevorzugt)",
+        phoneLabel: "Telefon",
+        copyLabel: "Copy",
+        copyEmailAria: "E-Mail kopieren",
+        copyPhoneAria: "Telefonnummer kopieren",
+        emailCopied: "E-Mail in die Zwischenablage kopiert",
+        phoneCopied: "Telefonnummer in die Zwischenablage kopiert",
+        formName: "Ansprechpartner",
         formPharmacy: "Apotheke",
         formEmail: "E-Mail",
-        formPhone: "Telefon",
+        formPhone: "Telefonnummer",
         formDateStart: "Startdatum",
         formDateEnd: "Enddatum",
-        formType: "Art der Vertretung",
-        formTypeDay: "Tagesvertretung",
-        formTypeEmergency: "Notdienst",
-        formTypeMulti: "Mehrtägiger Einsatz",
         formMessage: "Nachricht",
-        formSubmit: "Anfrage absenden"
+        formSubmit: "Anfrage senden"
       },
       thankyou: {
         title: "Danke — Ihre Anfrage wurde gesendet",
@@ -207,35 +213,34 @@
       hero: {
         eyebrow: "Locum Pharmacist",
         title: "Tabarek Khazraj",
-        lead: "Reliable pharmaceutical cover for pharmacies, emergency services and short-notice staffing gaps.",
-        ctaPrimary: "Contact me",
+        lead: "Reliable support for pharmacies during holidays, illness and staffing shortages.",
+        location: "Berlin, Brandenburg and, by arrangement, throughout Germany.",
+        ctaPrimary: "Send inquiry",
         ctaSecondary: "Email directly",
         portraitAlt: "Portrait of Tabarek Khazraj"
       },
       about: {
         title: "Pharmaceutical support when you need it",
-        intro: "Since April 2023, I have covered public pharmacies in Berlin and across Germany, adapting quickly to new teams, workflows and pharmacy software.",
-        card1Title: "Day-to-day",
-        card1Body: "OTC sales, customer advice, prescription checks and pharmaceutical care.",
-        card2Title: "Emergency service",
-        card2Body: "Reliable cover for night, weekend and holiday services.",
-        card3Title: "Team relief",
-        card3Body: "Support during holidays, sick leave, training or high workload."
+        intro: "I take on cover in everyday pharmacy operations, support teams during planned absences and help with short-notice staffing gaps.",
+        card1Title: "Team relief",
+        card1Body: "Support during holidays, illness, training or high workload.",
+        card2Title: "Day-to-day work",
+        card2Body: "OTC sales, advice, prescription fulfilment and pharmaceutical care.",
+        card3Title: "Manager cover",
+        card3Body: "Reliable and responsible cover for pharmacy management during holidays or short-notice absence."
       },
       aboutpage: {
         title: "About me",
-        steckbriefTitle: "Profile",
-        steckbriefP1: "I am a licensed pharmacist and have worked as an independent locum pharmacist in Berlin and across Germany since April 2023. In that role, I have covered more than 30 public pharmacies and adapted quickly to different teams, workflows and software systems.",
-        steckbriefP2: "My experience combines German community pharmacy practice with clinical pharmacy: before receiving my Berlin pharmacist license in 2023, I worked in public pharmacies in Germany and completed clinical rotations from 2018 to 2021 in oncology, internal medicine, endocrinology and COVID-19 wards.",
-        steckbriefP3: "I received my pharmacist license in Berlin in 2023. I am a member of the Berlin Chamber of Pharmacists and completed a five-year university pharmacy degree at the University of Babylon.",
-        steckbriefP4: "In day-to-day pharmacy work, I am independent, flexible and responsible. I support teams calmly and systematically, communicate clearly with customers, prescribers and medical staff, and relieve the pharmacy wherever support is needed.",
-        steckbriefP5: "By combining clinical and community pharmacy experience, I bring a broad pharmaceutical background to locum assignments.",
+        profileP1: "When I began studying pharmacy at the University of Babylon in Iraq, I knew I had chosen a profession that would let me help people directly every day. My degree was taught entirely in English and gave me a broad foundation across pharmaceutical disciplines, so I am comfortable communicating in English both in everyday settings and in pharmaceutical terminology.",
+        profileP2: "During my final year of study, I started working as a pharmaceutical representative. Because contact with people and communication have always been strengths of mine, I enjoyed this work very much. Over time, however, I realized that I wanted to deepen my pharmaceutical knowledge further. I therefore chose clinical pharmacy and worked for several years in a rotation program as a clinical pharmacist, gaining experience in internal medicine, endocrinology, oncology and on the COVID-19 ward.",
+        profileP3: "Close collaboration with doctors, nurses and my pharmaceutical colleagues further developed my professional communication skills and scientific thinking. I learned to work across disciplines and to make pharmaceutical decisions with the best possible patient care in mind.",
+        profileP4: "I have always wanted to discover new countries, cultures and people, so I decided to move to Germany. Berlin quickly became my new home, a city whose diversity, openness and international character still inspire me. I came to Germany in 2021, first completed intensive German courses, passed the specialist language exam and then worked as a pharmacist under supervision. After receiving my license in April 2023, I continued my professional path in German community pharmacies and have worked since then as an independent locum pharmacist.",
+        profileP5: "Today, I especially value the opportunity to get to know new teams, ways of working and pharmacies again and again. My goal has always been to run my own pharmacy. Every assignment gives me the chance to learn from different teams, leadership styles and workflows. These experiences help me grow professionally and personally while supporting each pharmacy with full commitment.",
         languagesTitle: "Languages",
         languagesIntro: "Languages I can use confidently with customers, prescribers and teams.",
         langDe: "German",
         langEn: "English",
         langAr: "Arabic",
-        whyTitle: "Why your pharmacy is in safe hands with me",
         whyCta: "Send inquiry",
         workstationAlt: "Tabarek Khazraj pointing"
       },
@@ -250,18 +255,20 @@
         b2Quote: "Placeholder — this review will be replaced with a real client reference.",
         b3Name: "Review 3",
         b3Role: "Pharmacy",
-        b3Quote: "Placeholder — this review will be replaced with a real client reference."
+        b3Quote: "Placeholder — this review will be replaced with a real client reference.",
+        previousAria: "Previous reviews",
+        nextAria: "Next reviews"
       },
       why: {
         title: "Why you should book me",
         card1Title: "Customer care",
-        card1Body: "I listen carefully, advise clearly and make sure every customer gets the right solution.",
+        card1Body: "I enjoy working with people, listen attentively and explain advice clearly so every customer receives the right solution.",
         card2Title: "Empathy",
-        card2Body: "I take concerns seriously without being overwhelmed by difficult situations — with calm and understanding.",
+        card2Body: "I take concerns seriously without letting difficult situations overwhelm me. With calm and understanding, I support people even in demanding moments.",
         card3Title: "Communication",
-        card3Body: "Clear, respectful and on equal footing — with the team, with prescribers and with customers.",
+        card3Body: "Clear, respectful and on equal footing with the team, with prescribers and in customer conversations.",
         card4Title: "Flexibility",
-        card4Body: "I adapt to new teams, ERP systems and working hours — from emergency services to holiday cover.",
+        card4Body: "I adapt quickly to new teams, pharmacy software and workflows, and get up to speed in new structures fast.",
         card5Title: "Teamwork",
         card5Body: "I integrate quickly into existing workflows, support the team and noticeably relieve the pharmacy management.",
         card6Title: "Professional confidence",
@@ -272,24 +279,28 @@
         title: "Services",
         intro: "I cover for you in all staffing situations in the Berlin and Brandenburg region. Nationwide on request. Current availability on request.",
         badge: "By arrangement",
+        experienceTitle: "Experience at a glance",
+        experience1: "Successfully supported more than 35 pharmacies",
+        experience2: "Short- and long-term locum assignments",
+        experience3: "5 months of experience in a mail-order pharmacy",
+        experience4: "Assignments lasting weeks to months in specialized pharmacies:",
+        experience5: "Care-home supply: unit-dose blister packaging, medication reviews and support for doctors' offices and care services",
+        experience6: "Cannabis supply: checking, documentation and dispensing of medicinal cannabis products",
+        experience7: "Shopping center pharmacies: active OTC work and confident handling of high customer volume.",
         s1Title: "Management cover",
         s1Body: "Cover for the pharmacy manager during holidays, illness or other reasons.",
-        s2Title: "Customer care",
-        s2Body: "Active support in OTC sales.",
+        s2Title: "Customer advice & care",
+        s2Body: "Active support in OTC sales and clear advice in customer conversations.",
         s3Title: "Prescription checks",
-        s3Body: "Experience with ScanAdhoc and ALG Online, as well as the classic paper-based workflow.",
+        s3Body: "Experience with ScanAdhoc as well as classic checks without software support.",
         s4Title: "Workforce planning",
-        s4Body: "If desired, and for longer assignments.",
-        s5Title: "Emergency service",
-        s5Body: "Nationwide on request.",
+        s4Body: "For long-term cover assignments, I am happy to support workforce planning.",
+        s5Title: "Emergency services",
+        s5Body: "Emergency service cover as part of an ongoing locum assignment.",
         s6Title: "Documentation",
-        s6Body: "Documentation-required medicines such as narcotics, imports, etc.",
-        s7Title: "Feedback",
-        s7Body: "After an assignment I'm happy to run a feedback session to help optimise your processes.",
-        s8Title: "Self-employment",
-        s8Body: "Advice on everything around self-employment for pharmacists.",
+        s6Body: "Documentation of narcotic prescriptions, imports, veterinary medicines and other special forms.",
         s9Title: "Medicinal cannabis",
-        s9Body: "Consultation on topics such as advice, checks, production, dispensing and documentation."
+        s9Body: "Checking, documentation and dispensing of medicinal cannabis products."
       },
       software: {
         title: "Software skills",
@@ -299,20 +310,20 @@
         title: "Contact",
         intro: "Send a short request with timeframe, location and the scope you need. I'll get back to you as soon as possible.",
         bookTitle: "Book me",
-        emailTitle: "Contact me by email",
-        emailBody: "For any other inquiries, reach me at:",
-        copyLabel: "Copy email",
-        copied: "Copied!",
-        formName: "Name",
+        emailTitle: "Contact details",
+        emailBody: "Email (preferred)",
+        phoneLabel: "Phone",
+        copyLabel: "Copy",
+        copyEmailAria: "Copy email",
+        copyPhoneAria: "Copy phone number",
+        emailCopied: "Email copied to clipboard",
+        phoneCopied: "Phone copied to clipboard",
+        formName: "Contact person",
         formPharmacy: "Pharmacy",
         formEmail: "Email",
-        formPhone: "Phone",
+        formPhone: "Phone number",
         formDateStart: "Start date",
         formDateEnd: "End date",
-        formType: "Type of cover",
-        formTypeDay: "Day cover",
-        formTypeEmergency: "Emergency service",
-        formTypeMulti: "Multi-day assignment",
         formMessage: "Message",
         formSubmit: "Submit inquiry"
       },
@@ -458,6 +469,19 @@
       svg.setAttribute("height", listRect.height);
       svg.replaceChildren();
 
+      [
+        [0.29, 0.17],
+        [0.4, 0.28],
+        [0.49, 0.4]
+      ].forEach(([radiusX, radiusY]) => {
+        const orbit = document.createElementNS("http://www.w3.org/2000/svg", "ellipse");
+        orbit.setAttribute("cx", centerX);
+        orbit.setAttribute("cy", centerY);
+        orbit.setAttribute("rx", listRect.width * radiusX);
+        orbit.setAttribute("ry", listRect.height * radiusY);
+        svg.appendChild(orbit);
+      });
+
       cards.forEach((card) => {
         const rect = card.getBoundingClientRect();
         const cardX = rect.left - listRect.left + rect.width / 2;
@@ -515,12 +539,108 @@
     sections.forEach((section) => observer.observe(section));
   }
 
+  function initItemAnimations() {
+    const groupDefinitions = [
+      [".counters", ":scope > .counter"],
+      [".grid", ":scope > article"],
+      [".testimonials-grid", ":scope > .testimonial-card"],
+      [".why-grid", ":scope > .why-card"],
+      [".language-list", ":scope > li"],
+      [".experience-list", ":scope > li"],
+      [".service-grid", ":scope > .service-card"],
+      [".software-grid", ":scope > .software-card"],
+      [".contact-cards", ":scope > .contact-card, :scope > .contact-side"],
+      [".contact-card--email", ":scope > .contact-detail"]
+    ];
+
+    const groups = groupDefinitions.flatMap(([groupSelector, itemSelector]) =>
+      Array.from(document.querySelectorAll(groupSelector)).map((group) => ({
+        group,
+        items: Array.from(group.querySelectorAll(itemSelector))
+      }))
+    ).filter(({ items }) => items.length > 0);
+
+    if (groups.length === 0) return;
+
+    groups.forEach(({ group, items }) => {
+      group.classList.add("stagger-group");
+      items.forEach((item, index) => {
+        item.classList.add("stagger-item");
+        item.style.setProperty("--item-reveal-delay", `${Math.min(index * 55, 385)}ms`);
+      });
+    });
+
+    const reveal = (group) => group.classList.add("stagger-group--visible");
+
+    if (!("IntersectionObserver" in window)) {
+      groups.forEach(({ group }) => reveal(group));
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            reveal(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -6% 0px" }
+    );
+
+    groups.forEach(({ group }) => observer.observe(group));
+  }
+
+  function initReviewCarousels() {
+    document.querySelectorAll("[data-review-carousel]").forEach((carousel) => {
+      const track = carousel.querySelector("[data-review-track]");
+      const previous = carousel.querySelector("[data-review-previous]");
+      const next = carousel.querySelector("[data-review-next]");
+      if (!track || !previous || !next) return;
+
+      const updateControls = () => {
+        const maxScroll = Math.max(0, track.scrollWidth - track.clientWidth);
+        const hasOverflow = maxScroll > 2;
+        previous.hidden = !hasOverflow;
+        next.hidden = !hasOverflow;
+        previous.disabled = !hasOverflow || track.scrollLeft <= 2;
+        next.disabled = !hasOverflow || track.scrollLeft >= maxScroll - 2;
+      };
+
+      const scroll = (direction) => {
+        const firstCard = track.querySelector(".testimonial-card");
+        if (!firstCard) return;
+        const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+        const distance = firstCard.getBoundingClientRect().width + gap;
+        const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        track.scrollBy({
+          left: direction * distance,
+          behavior: reduceMotion ? "auto" : "smooth"
+        });
+      };
+
+      previous.addEventListener("click", () => scroll(-1));
+      next.addEventListener("click", () => scroll(1));
+      track.addEventListener("scroll", updateControls, { passive: true });
+
+      if ("ResizeObserver" in window) {
+        const observer = new ResizeObserver(updateControls);
+        observer.observe(track);
+      }
+
+      requestAnimationFrame(updateControls);
+    });
+  }
+
   function init() {
     const stored = getStoredLang();
     const lang = stored || detectBrowserLang();
     renderSoftwareSkills();
     applyLang(lang);
     initSectionAnimations();
+    initItemAnimations();
+    initReviewCarousels();
 
     document.querySelectorAll(".lang-switch [data-lang]").forEach((btn) => {
       btn.addEventListener("click", () => {
@@ -535,38 +655,40 @@
       document.querySelectorAll("[data-software-list]").forEach((list) => observer.observe(list));
     }
 
-    const copyBtn = document.getElementById("copy-email");
-    if (copyBtn) {
+    const copy = (text) => {
+      if (navigator.clipboard && window.isSecureContext) {
+        return navigator.clipboard.writeText(text);
+      }
+      return new Promise((resolve, reject) => {
+        try {
+          const ta = document.createElement("textarea");
+          ta.value = text;
+          ta.style.position = "fixed";
+          ta.style.opacity = "0";
+          document.body.appendChild(ta);
+          ta.select();
+          const ok = document.execCommand("copy");
+          document.body.removeChild(ta);
+          ok ? resolve() : reject();
+        } catch (e) { reject(e); }
+      });
+    };
+
+    document.querySelectorAll("[data-copy-target]").forEach((copyBtn) => {
       copyBtn.addEventListener("click", () => {
-        const emailLink = document.querySelector(".email-address");
-        const email = emailLink ? emailLink.textContent.trim() : "";
+        const text = copyBtn.getAttribute("data-copy-target") || "";
+        const feedbackKey = copyBtn.getAttribute("data-copy-feedback");
         const feedback = document.getElementById("copy-feedback");
-        const copy = (text) => {
-          if (navigator.clipboard && window.isSecureContext) {
-            return navigator.clipboard.writeText(text);
-          }
-          return new Promise((resolve, reject) => {
-            try {
-              const ta = document.createElement("textarea");
-              ta.value = text;
-              ta.style.position = "fixed";
-              ta.style.opacity = "0";
-              document.body.appendChild(ta);
-              ta.select();
-              const ok = document.execCommand("copy");
-              document.body.removeChild(ta);
-              ok ? resolve() : reject();
-            } catch (e) { reject(e); }
-          });
-        };
-        copy(email).then(() => {
+        copy(text).then(() => {
           if (feedback) {
+            const message = feedbackKey ? getPath(feedbackKey, currentLang()) : "";
+            feedback.textContent = message || "Copied";
             feedback.classList.add("copy-feedback--show");
             setTimeout(() => feedback.classList.remove("copy-feedback--show"), 1800);
           }
         });
       });
-    }
+    });
   }
 
   if (document.readyState === "loading") {

@@ -8,7 +8,7 @@
       content="Tabarek Khazraj bietet flexible Vertretungen für Apotheken in Deutschland."
     />
     <title>Tabarek Khazraj — Vertretungs-Apothekerin</title>
-    <link rel="stylesheet" href="style.css?v=20260714-section-animation" />
+    <link rel="stylesheet" href="style.css?v=20260715-review-carousel" />
   </head>
   <body data-page="Home">
     <header class="top-nav">
@@ -43,14 +43,15 @@
       </figure>
       <div class="container hero-content">
         <div class="hero-copy">
-          <p class="eyebrow" data-i18n="hero.eyebrow">Vertretungs-Apothekerin</p>
+          <p class="eyebrow" data-i18n="hero.eyebrow">Vertretungsapothekerin</p>
           <h1 data-i18n="hero.title">Tabarek Khazraj</h1>
           <p class="lead" data-i18n="hero.lead">
-            Zuverlässige pharmazeutische Vertretung für Apotheken, Notdienste
-            und kurzfristige Personalengpässe.
+            Zuverlässige Unterstützung für Apotheken bei Urlaub, Krankheit und
+            personellen Engpässen.
           </p>
+          <p class="lead" data-i18n="hero.location">Berlin, Brandenburg und nach Vereinbarung deutschlandweit.</p>
           <div class="hero-buttons">
-            <a class="button" href="kontakt.html" data-i18n="hero.ctaPrimary">Anfrage senden</a>
+            <a class="button" href="kontakt.html" data-i18n="hero.ctaPrimary">Jetzt anfragen</a>
           </div>
         </div>
       </div>
@@ -91,22 +92,21 @@
       <section class="container about" id="profil">
         <h2 data-i18n="about.title">Pharmazeutische Unterstützung, wenn sie gebraucht wird</h2>
         <p class="intro-text" data-i18n="about.intro">
-          Seit April 2023 vertrete ich öffentliche Apotheken in Berlin und
-          bundesweit - mit schneller Einarbeitung in Teams, Abläufe und
-          Warenwirtschaftssysteme.
+          Ich übernehme Vertretungen im Apothekenalltag, unterstütze Teams bei
+          planbaren Abwesenheiten und helfe bei kurzfristigen Engpässen.
         </p>
         <div class="grid">
           <article>
-            <h3 data-i18n="about.card1Title">Tagesgeschäft</h3>
-            <p data-i18n="about.card1Body">Handverkauf, Beratung, Rezeptprüfung und pharmazeutische Betreuung.</p>
+            <h3 data-i18n="about.card1Title">Teamentlastung</h3>
+            <p data-i18n="about.card1Body">Unterstützung bei Urlaub, Krankheit, Fortbildung oder hoher Auslastung.</p>
           </article>
           <article>
-            <h3 data-i18n="about.card2Title">Notdienst</h3>
-            <p data-i18n="about.card2Body">Verlässliche Vertretung für Nacht-, Wochenend- und Feiertagsdienste.</p>
+            <h3 data-i18n="about.card2Title">Tagesgeschäft</h3>
+            <p data-i18n="about.card2Body">Handverkauf, Beratung, Rezeptbelieferung und pharmazeutische Betreuung.</p>
           </article>
           <article>
-            <h3 data-i18n="about.card3Title">Team-Entlastung</h3>
-            <p data-i18n="about.card3Body">Unterstützung bei Urlaub, Krankheit, Fortbildung oder hoher Auslastung.</p>
+            <h3 data-i18n="about.card3Title">Chefvertretung</h3>
+            <p data-i18n="about.card3Body">Zuverlässige und verantwortungsvolle Übernahme der Apothekenleitung bei Urlaub oder kurzfristiger Abwesenheit.</p>
           </article>
         </div>
       </section>
@@ -114,34 +114,38 @@
       <section class="container section" id="bewertungen">
         <h2 data-i18n="reviews.title">Bewertungen</h2>
         <p class="intro-text" data-i18n="reviews.lead">Was andere über mich sagen</p>
-        <div class="testimonials-grid">
-          <article class="testimonial-card">
-            <div class="testimonial-avatar" aria-hidden="true">B1</div>
-            <h3 class="testimonial-meta" data-i18n="reviews.b1Name">Bewertung 1</h3>
-            <p class="testimonial-role" data-i18n="reviews.b1Role">Apotheke</p>
-            <p class="testimonial-quote" data-i18n="reviews.b1Quote">
-              Platzhalter — diese Bewertung wird noch durch eine echte
-              Kundenreferenz ersetzt.
-            </p>
-          </article>
-          <article class="testimonial-card">
-            <div class="testimonial-avatar" aria-hidden="true">B2</div>
-            <h3 class="testimonial-meta" data-i18n="reviews.b2Name">Bewertung 2</h3>
-            <p class="testimonial-role" data-i18n="reviews.b2Role">Inhaber*in</p>
-            <p class="testimonial-quote" data-i18n="reviews.b2Quote">
-              Platzhalter — diese Bewertung wird noch durch eine echte
-              Kundenreferenz ersetzt.
-            </p>
-          </article>
-          <article class="testimonial-card">
-            <div class="testimonial-avatar" aria-hidden="true">B3</div>
-            <h3 class="testimonial-meta" data-i18n="reviews.b3Name">Bewertung 3</h3>
-            <p class="testimonial-role" data-i18n="reviews.b3Role">Apotheke</p>
-            <p class="testimonial-quote" data-i18n="reviews.b3Quote">
-              Platzhalter — diese Bewertung wird noch durch eine echte
-              Kundenreferenz ersetzt.
-            </p>
-          </article>
+        <div class="reviews-carousel" data-review-carousel>
+          <button class="review-arrow review-arrow--previous" type="button" data-review-previous hidden aria-label="Vorherige Bewertungen" data-i18n-attr="aria-label:reviews.previousAria">&#8592;</button>
+          <div class="testimonials-grid" data-review-track role="region" tabindex="0" aria-label="Bewertungen" data-i18n-attr="aria-label:reviews.title">
+            <article class="testimonial-card">
+              <div class="testimonial-avatar" aria-hidden="true">B1</div>
+              <h3 class="testimonial-meta" data-i18n="reviews.b1Name">Bewertung 1</h3>
+              <p class="testimonial-role" data-i18n="reviews.b1Role">Apotheke</p>
+              <p class="testimonial-quote" data-i18n="reviews.b1Quote">
+                Platzhalter — diese Bewertung wird noch durch eine echte
+                Kundenreferenz ersetzt.
+              </p>
+            </article>
+            <article class="testimonial-card">
+              <div class="testimonial-avatar" aria-hidden="true">B2</div>
+              <h3 class="testimonial-meta" data-i18n="reviews.b2Name">Bewertung 2</h3>
+              <p class="testimonial-role" data-i18n="reviews.b2Role">Inhaber*in</p>
+              <p class="testimonial-quote" data-i18n="reviews.b2Quote">
+                Platzhalter — diese Bewertung wird noch durch eine echte
+                Kundenreferenz ersetzt.
+              </p>
+            </article>
+            <article class="testimonial-card">
+              <div class="testimonial-avatar" aria-hidden="true">B3</div>
+              <h3 class="testimonial-meta" data-i18n="reviews.b3Name">Bewertung 3</h3>
+              <p class="testimonial-role" data-i18n="reviews.b3Role">Apotheke</p>
+              <p class="testimonial-quote" data-i18n="reviews.b3Quote">
+                Platzhalter — diese Bewertung wird noch durch eine echte
+                Kundenreferenz ersetzt.
+              </p>
+            </article>
+          </div>
+          <button class="review-arrow review-arrow--next" type="button" data-review-next hidden aria-label="Nächste Bewertungen" data-i18n-attr="aria-label:reviews.nextAria">&#8594;</button>
         </div>
       </section>
 
@@ -150,19 +154,19 @@
         <div class="why-grid">
           <article class="why-card">
             <h3 data-i18n="why.card1Title">Kundenorientierung</h3>
-            <p data-i18n="why.card1Body">Ich höre zu, berate verständlich und sorge dafür, dass jede Kundin und jeder Kunde die passende Lösung bekommt.</p>
+            <p data-i18n="why.card1Body">Ich arbeite gerne mit Menschen, höre aufmerksam zu und berate verständlich, damit jede Kundin und jeder Kunde die passende Lösung erhält.</p>
           </article>
           <article class="why-card">
             <h3 data-i18n="why.card2Title">Empathie</h3>
-            <p data-i18n="why.card2Body">Ich nehme Sorgen ernst, ohne mich von schwierigen Situationen vereinnahmen zu lassen — mit Ruhe und Verständnis.</p>
+            <p data-i18n="why.card2Body">Ich nehme Sorgen ernst, ohne mich von schwierigen Situationen vereinnahmen zu lassen. Mit Ruhe und Verständnis begleite ich Menschen auch in anspruchsvollen Situationen.</p>
           </article>
           <article class="why-card">
             <h3 data-i18n="why.card3Title">Kommunikation</h3>
-            <p data-i18n="why.card3Body">Klar, respektvoll und auf Augenhöhe — im Team, gegenüber Ärztinnen und Ärzten und im Kundengespräch.</p>
+            <p data-i18n="why.card3Body">Klar, respektvoll und auf Augenhöhe – im Team, gegenüber Ärztinnen und Ärzten sowie im Kundengespräch.</p>
           </article>
           <article class="why-card">
             <h3 data-i18n="why.card4Title">Flexibilität</h3>
-            <p data-i18n="why.card4Body">Ich passe mich an neue Teams, Warenwirtschaftssysteme und Arbeitszeiten an — von Notdienst bis Urlaubsvertretung.</p>
+            <p data-i18n="why.card4Body">Ich passe mich schnell an neue Teams, Warenwirtschaftssysteme und Arbeitsabläufe an und arbeite mich zügig in neue Strukturen ein.</p>
           </article>
           <article class="why-card">
             <h3 data-i18n="why.card5Title">Teamarbeit</h3>
@@ -188,6 +192,6 @@
       </div>
     </footer>
 
-    <script src="i18n.js?v=20260714-section-animation"></script>
+    <script src="i18n.js?v=20260715-review-carousel"></script>
   </body>
 </html>
