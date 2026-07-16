@@ -52,7 +52,7 @@
         location: "Berlin, Brandenburg und nach Vereinbarung deutschlandweit.",
         ctaPrimary: "Jetzt anfragen",
         ctaSecondary: "Direkt per E-Mail",
-        portraitAlt: "Porträt von Tabarek Khazraj"
+        portraitAlt: "Vertretungsapothekerin Tabarek Khazraj"
       },
       about: {
         title: "Pharmazeutische Unterstützung, wenn sie gebraucht wird",
@@ -77,7 +77,7 @@
         langEn: "Englisch",
         langAr: "Arabisch",
         whyCta: "Anfrage senden",
-        workstationAlt: "Tabarek Khazraj zeigt auf etwas"
+        workstationAlt: "Tabarek Khazraj, selbstständige Apothekerin"
       },
       reviews: {
         title: "Bewertungen",
@@ -394,16 +394,6 @@
   function applyLang(lang) {
     if (!SUPPORTED.includes(lang)) lang = DEFAULT_LANG;
     document.documentElement.lang = lang;
-
-    const page = document.body && document.body.dataset.page;
-
-    if (page && getPath(`meta.title${page}` , lang)) {
-      document.title = getPath(`meta.title${page}`, lang);
-      const meta = document.querySelector('meta[name="description"]');
-      if (meta && getPath(`meta.desc${page}`, lang)) {
-        meta.setAttribute("content", getPath(`meta.desc${page}`, lang));
-      }
-    }
 
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const key = el.getAttribute("data-i18n");
