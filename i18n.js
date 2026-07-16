@@ -512,7 +512,7 @@
 
     sections.forEach((section, index) => {
       section.classList.add("section-reveal");
-      section.style.setProperty("--reveal-delay", `${Math.min(index * 90, 540)}ms`);
+      section.style.setProperty("--reveal-delay", `${Math.min(index * 30, 150)}ms`);
     });
 
     const reveal = (section) => {
